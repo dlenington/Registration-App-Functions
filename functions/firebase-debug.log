@@ -1,0 +1,388 @@
+[debug] [2020-01-12T16:50:07.955Z] ----------------------------------------------------------------------
+[debug] [2020-01-12T16:50:07.958Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-12T16:50:07.958Z] CLI Version:   7.11.0
+[debug] [2020-01-12T16:50:07.958Z] Platform:      darwin
+[debug] [2020-01-12T16:50:07.958Z] Node Version:  v10.16.0
+[debug] [2020-01-12T16:50:07.959Z] Time:          Sun Jan 12 2020 10:50:07 GMT-0600 (Central Standard Time)
+[debug] [2020-01-12T16:50:07.959Z] ----------------------------------------------------------------------
+[debug] [2020-01-12T16:50:07.959Z] 
+[debug] [2020-01-12T16:50:07.972Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-12T16:50:07.972Z] > authorizing via signed-in user
+[debug] [2020-01-12T16:50:07.972Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-12T16:50:07.975Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-12T16:50:08.174Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-12T16:50:08.176Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-12T16:50:08.368Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-12T16:50:08.658Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-12T16:50:08.658Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-12T16:50:08.658Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-12T16:50:08.659Z] [worker-~diagnostic~-9f3d08e4-da8c-42f7-a958-cbdd9485f8ac]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59202.sock
+[debug] [2020-01-12T16:50:08.659Z] [worker-~diagnostic~-9f3d08e4-da8c-42f7-a958-cbdd9485f8ac]: BUSY
+[debug] [2020-01-12T16:50:09.039Z] [runtime-status] [59202] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-12T16:50:09.041Z] [runtime-status] [59202] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-12T16:50:09.043Z] [runtime-status] [59202] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-12T16:50:09.044Z] [runtime-status] [59202] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-12T16:50:09.045Z] [runtime-status] [59202] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-12T16:50:09.896Z] [worker-~diagnostic~-9f3d08e4-da8c-42f7-a958-cbdd9485f8ac]: IDLE
+[debug] [2020-01-12T16:52:31.726Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T16:52:31.726Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T16:52:31.727Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T16:52:31.736Z] [worker-pool] addWorker(api)
+[debug] [2020-01-12T16:52:31.736Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-12T16:52:31.736Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T16:52:31.736Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T16:52:31.736Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T16:52:32.354Z] [runtime-status] [59304] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-12T16:52:32.356Z] [runtime-status] [59304] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-12T16:52:32.359Z] [runtime-status] [59304] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-12T16:52:32.360Z] [runtime-status] [59304] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-12T16:52:32.361Z] [runtime-status] [59304] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-12T16:52:33.473Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T16:52:33.473Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T16:52:33.473Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T16:52:33.477Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T16:52:33.484Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T16:52:33.517Z] [runtime-status] [59304] Ephemeral server handling POST request
+[debug] [2020-01-12T16:52:33.545Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T16:52:34.056Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T16:52:34.056Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T16:52:34.121Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T16:52:34.122Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T16:52:34.122Z] Accepted request GET /bendan-app/us-central1/api/paintings --> api
+[debug] [2020-01-12T16:52:34.122Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T16:52:34.122Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T16:52:34.122Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T16:52:34.123Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T16:52:34.124Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T16:52:34.124Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T16:52:34.124Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T16:52:34.126Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T16:52:34.133Z] [runtime-status] [59304] Ephemeral server handling GET request
+[debug] [2020-01-12T16:52:34.139Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T16:52:34.140Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T16:52:34.140Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:06:41.373Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:06:41.374Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:06:41.374Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-12T17:06:41.375Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:06:41.376Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:06:41.376Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:06:41.382Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:06:41.384Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:06:41.384Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:06:41.387Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:06:41.404Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:06:41.413Z] [runtime-status] [59304] Ephemeral server handling GET request
+[debug] [2020-01-12T17:06:42.157Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:06:42.712Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:06:42.712Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:28:24.814Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:28:24.815Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:28:24.816Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-12T17:28:24.816Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:28:24.817Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:28:24.817Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:28:24.825Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:28:24.827Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:28:24.827Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:28:24.829Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:28:24.838Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:28:24.844Z] [runtime-status] [59304] Ephemeral server handling GET request
+[debug] [2020-01-12T17:28:24.851Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:28:25.142Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:28:25.142Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:30:21.139Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:30:21.139Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:30:21.139Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-12T17:30:21.139Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:30:21.139Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:30:21.139Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:30:21.140Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:30:21.140Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:30:21.140Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:30:21.141Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:30:21.142Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:30:21.145Z] [runtime-status] [59304] Ephemeral server handling GET request
+[debug] [2020-01-12T17:30:21.146Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:30:21.232Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:30:21.233Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:30:31.997Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:30:31.997Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:30:31.997Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:30:31.997Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:30:32.001Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:30:32.001Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:30:32.002Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:30:32.003Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:30:32.003Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:30:32.003Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:30:32.004Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:30:32.008Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:30:32.016Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:30:32.016Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:30:32.016Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:43:09.122Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:43:09.123Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:43:09.123Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:43:09.123Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:43:09.124Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:43:09.124Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:43:09.128Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:43:09.129Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:43:09.129Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:43:09.131Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:43:09.143Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:43:09.150Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:43:09.155Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:43:09.156Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:43:09.157Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:43:10.395Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:43:10.395Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:43:10.395Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:43:10.395Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:43:10.395Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:43:10.395Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:43:10.396Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:43:10.396Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:43:10.396Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:43:10.397Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:43:10.397Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:43:10.400Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:43:10.403Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:43:10.403Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:43:10.404Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:43:15.111Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:43:15.111Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:43:15.111Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:43:15.111Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:43:15.111Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:43:15.111Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:43:15.112Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:43:15.112Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:43:15.112Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:43:15.112Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:43:15.113Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:43:15.115Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:43:15.117Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:43:15.117Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:43:15.117Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:44:32.679Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:44:32.679Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:44:32.679Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:44:32.679Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:44:32.679Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:44:32.679Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:44:32.680Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:44:32.680Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:44:32.680Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:44:32.681Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:44:32.688Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:44:32.690Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:44:32.693Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:44:32.695Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:44:32.695Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:48:08.971Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:48:08.973Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:48:08.973Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:48:08.974Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:48:08.974Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:48:08.975Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:48:08.979Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:48:08.987Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:48:08.987Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:48:08.988Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:48:08.994Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:48:09.006Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:48:09.016Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:48:09.016Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:48:09.017Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:52:21.609Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:52:21.610Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:52:21.611Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:52:21.611Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:52:21.611Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:52:21.612Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:52:21.620Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:52:21.621Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:52:21.621Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:52:21.622Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:52:21.626Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:52:21.634Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:52:21.638Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:52:21.639Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:52:21.639Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:57:52.764Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:57:52.764Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:57:52.764Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:57:52.764Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:57:52.765Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:57:52.765Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:57:52.765Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:57:52.766Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:57:52.766Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:57:52.766Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:57:52.767Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:57:52.771Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:57:52.775Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:57:52.777Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:57:52.777Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:58:26.011Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:58:26.012Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:58:26.012Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:58:26.012Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:58:26.012Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:58:26.012Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:58:26.015Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:58:26.015Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:58:26.015Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:58:26.015Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:58:26.017Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:58:26.021Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The password is invalid or the user does not have a password.]
+[info] >    code: 'auth/wrong-password',
+[info] >    message:
+[info] >     'The password is invalid or the user does not have a password.' }
+[debug] [2020-01-12T17:58:26.023Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:58:26.024Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:58:26.024Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T17:59:03.105Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T17:59:03.105Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T17:59:03.105Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T17:59:03.105Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T17:59:03.105Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:59:03.105Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T17:59:03.106Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T17:59:03.106Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T17:59:03.106Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T17:59:03.106Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T17:59:03.108Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T17:59:03.111Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T17:59:03.115Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T17:59:03.115Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T17:59:03.115Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T18:09:22.013Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T18:09:22.014Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T18:09:22.014Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T18:09:22.014Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T18:09:22.014Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T18:09:22.014Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T18:09:22.016Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T18:09:22.017Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T18:09:22.017Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T18:09:22.024Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T18:09:22.029Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T18:09:22.034Z] [runtime-status] [59304] Ephemeral server handling POST request
+[debug] [2020-01-12T18:09:22.034Z] [runtime-status] [59304] Ephemeral server survived.
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T18:09:22.045Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T18:09:22.045Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T18:09:27.692Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T18:09:27.692Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T18:09:27.692Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T18:09:27.692Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T18:09:27.692Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T18:09:27.692Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T18:09:27.693Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T18:09:27.694Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T18:09:27.694Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T18:09:27.694Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T18:09:27.695Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T18:09:27.700Z] [runtime-status] [59304] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-12T18:09:27.701Z] [runtime-status] [59304] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T18:09:27.704Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T18:09:27.704Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-12T18:09:32.717Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-12T18:09:32.717Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-12T18:09:32.717Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-12T18:09:32.717Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-12T18:09:32.717Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T18:09:32.717Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: BUSY
+[debug] [2020-01-12T18:09:32.720Z] [runtime-status] [59304] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-12T18:09:32.721Z] [runtime-status] [59304] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-12T18:09:32.721Z] [runtime-status] [59304] Running api in mode HTTPS
+[debug] [2020-01-12T18:09:32.721Z] [runtime-status] [59304] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_59304.sock
+[debug] [2020-01-12T18:09:32.722Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-12T18:09:32.725Z] [runtime-status] [59304] Ephemeral server handling POST request
+[debug] [2020-01-12T18:09:32.725Z] [runtime-status] [59304] Ephemeral server survived.
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-12T18:09:32.728Z] [worker-api-16d643af-4b82-4dba-a48b-655fba36f5ef]: IDLE
+[debug] [2020-01-12T18:09:32.729Z] [work-queue] {"queueLength":0,"workRunningCount":0}
