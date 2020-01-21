@@ -48,7 +48,9 @@ app.post("/signup", (req, res) => {
 
   if (isEmpty(newUser.email)) {
     errors.email = "Email must not be empty";
-  } else if (!isEmail(newUser.email)) {
+  }
+
+  if (!isEmail(newUser.email)) {
     errors.email = "Must be a valid email address";
   }
 
@@ -139,7 +141,7 @@ app.post("/posts", (req, res) => {
       res.json({ message: `document ${doc.id} created successfully ` });
     })
     .catch(err => {
-      res.status(500).json({ error: "something went wrong" });
+      res.status(500).json({ error: "Something went wrong" });
       console.err(error);
     });
 });

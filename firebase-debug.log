@@ -238,3 +238,1842 @@
 [info] i  functions: Finished "api" in ~1s
 [debug] [2020-01-12T22:49:37.954Z] [worker-api-e97ba532-32d4-464e-987f-9b90c5176e53]: IDLE
 [debug] [2020-01-12T22:49:37.955Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-18T23:34:01.711Z] ----------------------------------------------------------------------
+[debug] [2020-01-18T23:34:01.713Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-18T23:34:01.713Z] CLI Version:   7.11.0
+[debug] [2020-01-18T23:34:01.713Z] Platform:      darwin
+[debug] [2020-01-18T23:34:01.713Z] Node Version:  v10.16.0
+[debug] [2020-01-18T23:34:01.714Z] Time:          Sat Jan 18 2020 17:34:01 GMT-0600 (Central Standard Time)
+[debug] [2020-01-18T23:34:01.714Z] ----------------------------------------------------------------------
+[debug] [2020-01-18T23:34:01.714Z] 
+[debug] [2020-01-18T23:34:01.724Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-18T23:34:01.724Z] > authorizing via signed-in user
+[debug] [2020-01-18T23:34:01.725Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-18T23:34:01.726Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-18T23:34:01.726Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-18T23:34:10.407Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-18T23:34:10.421Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-18T23:34:10.614Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-18T23:34:10.616Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-18T23:34:11.681Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-18T23:34:11.966Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-18T23:34:11.967Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-18T23:34:11.967Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-18T23:34:11.967Z] [worker-~diagnostic~-ccb39081-8231-4448-8f20-688aed4f7d84]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1166.sock
+[debug] [2020-01-18T23:34:11.968Z] [worker-~diagnostic~-ccb39081-8231-4448-8f20-688aed4f7d84]: BUSY
+[debug] [2020-01-18T23:34:12.339Z] [runtime-status] [1166] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-18T23:34:12.340Z] [runtime-status] [1166] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-18T23:34:12.343Z] [runtime-status] [1166] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-18T23:34:12.345Z] [runtime-status] [1166] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-18T23:34:12.346Z] [runtime-status] [1166] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-18T23:34:13.298Z] [worker-~diagnostic~-ccb39081-8231-4448-8f20-688aed4f7d84]: IDLE
+[debug] [2020-01-18T23:34:24.429Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-18T23:34:24.430Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-18T23:34:24.430Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-18T23:34:24.433Z] [worker-pool] addWorker(api)
+[debug] [2020-01-18T23:34:24.433Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-18T23:34:24.433Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:34:24.433Z] [worker-api-b2d3c991-2a93-4f72-8a6f-b15b7323a415]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1181.sock
+[debug] [2020-01-18T23:34:24.434Z] [worker-api-b2d3c991-2a93-4f72-8a6f-b15b7323a415]: BUSY
+[debug] [2020-01-18T23:34:25.038Z] [runtime-status] [1181] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-18T23:34:25.041Z] [runtime-status] [1181] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-18T23:34:25.045Z] [runtime-status] [1181] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-18T23:34:25.046Z] [runtime-status] [1181] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-18T23:34:25.047Z] [runtime-status] [1181] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-18T23:34:26.138Z] [runtime-status] [1181] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:34:26.139Z] [runtime-status] [1181] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:34:26.139Z] [runtime-status] [1181] Running api in mode HTTPS
+[debug] [2020-01-18T23:34:26.143Z] [runtime-status] [1181] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1181.sock
+[debug] [2020-01-18T23:34:26.147Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:34:26.156Z] [runtime-status] [1181] Ephemeral server handling GET request
+[debug] [2020-01-18T23:34:26.531Z] [runtime-status] [1181] Ephemeral server survived.
+[debug] [2020-01-18T23:36:24.431Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-18T23:36:24.431Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-18T23:36:24.432Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-18T23:36:24.434Z] [worker-pool] addWorker(api)
+[debug] [2020-01-18T23:36:24.435Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-01-18T23:36:24.435Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:36:24.435Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:36:24.435Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-18T23:36:24.682Z] [runtime-status] [1184] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-18T23:36:24.684Z] [runtime-status] [1184] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-18T23:36:24.686Z] [runtime-status] [1184] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-18T23:36:24.687Z] [runtime-status] [1184] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-18T23:36:24.687Z] [runtime-status] [1184] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-18T23:36:25.021Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:36:25.022Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:36:25.022Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-18T23:36:25.025Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:36:25.030Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:36:25.040Z] [runtime-status] [1184] Ephemeral server handling GET request
+[debug] [2020-01-18T23:36:25.218Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~9s
+[debug] [2020-01-18T23:36:34.994Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-18T23:36:34.994Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-18T23:36:49.508Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-18T23:36:49.508Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-18T23:36:49.509Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-18T23:36:49.509Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:36:49.509Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:36:49.509Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-18T23:36:49.509Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:36:49.512Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:36:49.512Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-18T23:36:49.512Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:36:49.513Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:36:49.517Z] [runtime-status] [1184] Ephemeral server handling GET request
+[debug] [2020-01-18T23:36:49.519Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-18T23:36:49.627Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-18T23:36:49.628Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-18T23:37:33.870Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-18T23:37:33.870Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-18T23:37:33.870Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-18T23:37:33.870Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:37:33.870Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:37:33.870Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-18T23:37:33.870Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:37:33.871Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:37:33.871Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-18T23:37:33.871Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:37:33.872Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:37:33.888Z] [runtime-status] [1184] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-18T23:37:33.897Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-18T23:37:33.897Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-18T23:37:33.897Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-18T23:42:39.305Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-18T23:42:39.305Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-18T23:42:39.305Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-18T23:42:39.305Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:42:39.305Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:42:39.305Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-18T23:42:39.305Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:42:39.306Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:42:39.306Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-18T23:42:39.306Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:42:39.307Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:42:39.310Z] [runtime-status] [1184] Ephemeral server handling POST request
+[debug] [2020-01-18T23:42:39.311Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-18T23:42:39.313Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-18T23:42:39.313Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-18T23:45:36.331Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-18T23:45:36.331Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-18T23:45:36.331Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-18T23:45:36.331Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:45:36.331Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:45:36.331Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-18T23:45:36.332Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:45:36.332Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:45:36.332Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-18T23:45:36.332Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:45:36.340Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:45:36.343Z] [runtime-status] [1184] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-18T23:45:36.345Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-18T23:45:36.345Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-18T23:45:36.345Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-18T23:45:53.454Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-18T23:45:53.455Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-18T23:45:53.455Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-18T23:45:53.455Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:45:53.455Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:45:53.455Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-18T23:45:53.455Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:45:53.456Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:45:53.456Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-18T23:45:53.456Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:45:53.457Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:45:53.461Z] [runtime-status] [1184] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-18T23:45:53.462Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-18T23:45:53.466Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-18T23:45:53.466Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-18T23:47:53.049Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-18T23:47:53.049Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-18T23:47:53.049Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-18T23:47:53.049Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:47:53.049Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:47:53.049Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-18T23:47:53.049Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:47:53.050Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:47:53.050Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-18T23:47:53.051Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:47:53.052Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:47:53.054Z] [runtime-status] [1184] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-18T23:47:53.056Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-18T23:47:53.056Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-18T23:47:53.056Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-18T23:57:21.216Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-18T23:57:21.216Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-18T23:57:21.216Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-18T23:57:21.216Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-18T23:57:21.216Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:57:21.216Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-18T23:57:21.217Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-18T23:57:21.217Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-18T23:57:21.217Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-18T23:57:21.218Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-18T23:57:21.220Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-18T23:57:21.222Z] [runtime-status] [1184] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-18T23:57:21.224Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-18T23:57:21.224Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-18T23:57:21.225Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T00:46:17.990Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T00:46:17.991Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T00:46:17.991Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-19T00:46:17.992Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T00:46:17.992Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:46:17.992Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-19T00:46:17.994Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T00:46:17.996Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T00:46:17.996Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-19T00:46:17.996Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:46:18.016Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T00:46:18.029Z] [runtime-status] [1184] Ephemeral server handling POST request
+[debug] [2020-01-19T00:46:18.078Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~4s
+[debug] [2020-01-19T00:46:22.171Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-19T00:46:22.172Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T00:46:22.263Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T00:46:22.263Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T00:46:22.263Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T00:46:22.264Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T00:46:22.264Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:46:22.264Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-19T00:46:22.267Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T00:46:22.268Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T00:46:22.268Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-19T00:46:22.268Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:46:22.269Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T00:46:22.273Z] [runtime-status] [1184] Ephemeral server handling GET request
+[debug] [2020-01-19T00:46:22.275Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T00:46:22.410Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-19T00:46:22.410Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T00:47:42.078Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T00:47:42.078Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T00:47:42.078Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T00:47:42.078Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T00:47:42.078Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:47:42.078Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-19T00:47:42.078Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T00:47:42.079Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T00:47:42.079Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-19T00:47:42.079Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:47:42.080Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T00:47:42.082Z] [runtime-status] [1184] Ephemeral server handling GET request
+[debug] [2020-01-19T00:47:42.083Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T00:47:42.220Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-19T00:47:42.220Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T00:48:22.035Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T00:48:22.035Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T00:48:22.035Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T00:48:22.035Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T00:48:22.035Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:48:22.036Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-19T00:48:22.036Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T00:48:22.036Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T00:48:22.037Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-19T00:48:22.038Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:48:22.039Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T00:48:22.041Z] [runtime-status] [1184] Ephemeral server handling GET request
+[debug] [2020-01-19T00:48:22.041Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T00:48:22.128Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-19T00:48:22.128Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T00:48:45.371Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T00:48:45.371Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T00:48:45.371Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T00:48:45.371Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T00:48:45.371Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:48:45.371Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: BUSY
+[debug] [2020-01-19T00:48:45.373Z] [runtime-status] [1184] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T00:48:45.374Z] [runtime-status] [1184] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T00:48:45.374Z] [runtime-status] [1184] Running api in mode HTTPS
+[debug] [2020-01-19T00:48:45.374Z] [runtime-status] [1184] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_1184.sock
+[debug] [2020-01-19T00:48:45.375Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T00:48:45.377Z] [runtime-status] [1184] Ephemeral server handling GET request
+[debug] [2020-01-19T00:48:45.378Z] [runtime-status] [1184] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T00:48:45.468Z] [worker-api-9cd08347-87f0-4c10-9aa4-995cf1bbb87f]: IDLE
+[debug] [2020-01-19T00:48:45.468Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T14:37:22.662Z] ----------------------------------------------------------------------
+[debug] [2020-01-19T14:37:22.665Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-19T14:37:22.665Z] CLI Version:   7.11.0
+[debug] [2020-01-19T14:37:22.665Z] Platform:      darwin
+[debug] [2020-01-19T14:37:22.665Z] Node Version:  v10.16.0
+[debug] [2020-01-19T14:37:22.688Z] Time:          Sun Jan 19 2020 08:37:22 GMT-0600 (Central Standard Time)
+[debug] [2020-01-19T14:37:22.688Z] ----------------------------------------------------------------------
+[debug] [2020-01-19T14:37:22.688Z] 
+[debug] [2020-01-19T14:37:22.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-19T14:37:22.703Z] > authorizing via signed-in user
+[debug] [2020-01-19T14:37:22.703Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-19T14:37:22.705Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-19T14:37:22.705Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-19T14:37:22.917Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-19T14:37:22.931Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-19T14:37:23.119Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-19T14:37:23.120Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-19T14:37:23.455Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-19T14:37:23.758Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-19T14:37:23.759Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-19T14:37:23.759Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-19T14:37:23.760Z] [worker-~diagnostic~-c342efcb-0b1a-4670-afc5-b424079d31e8]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4443.sock
+[debug] [2020-01-19T14:37:23.760Z] [worker-~diagnostic~-c342efcb-0b1a-4670-afc5-b424079d31e8]: BUSY
+[debug] [2020-01-19T14:37:24.057Z] [runtime-status] [4443] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-19T14:37:24.059Z] [runtime-status] [4443] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-19T14:37:24.064Z] [runtime-status] [4443] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-19T14:37:24.067Z] [runtime-status] [4443] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T14:37:24.068Z] [runtime-status] [4443] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-19T14:37:25.360Z] [worker-~diagnostic~-c342efcb-0b1a-4670-afc5-b424079d31e8]: IDLE
+[debug] [2020-01-19T14:40:00.116Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T14:40:00.117Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T14:40:00.117Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T14:40:00.121Z] [worker-pool] addWorker(api)
+[debug] [2020-01-19T14:40:00.121Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-19T14:40:00.121Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T14:40:00.121Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:40:00.122Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: BUSY
+[debug] [2020-01-19T14:40:00.856Z] [runtime-status] [4501] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-19T14:40:00.859Z] [runtime-status] [4501] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-19T14:40:00.878Z] [runtime-status] [4501] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-19T14:40:00.882Z] [runtime-status] [4501] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T14:40:00.883Z] [runtime-status] [4501] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T14:40:02.172Z] [runtime-status] [4501] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T14:40:02.173Z] [runtime-status] [4501] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T14:40:02.173Z] [runtime-status] [4501] Running api in mode HTTPS
+[debug] [2020-01-19T14:40:02.178Z] [runtime-status] [4501] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:40:02.186Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T14:40:02.195Z] [runtime-status] [4501] Ephemeral server handling GET request
+[debug] [2020-01-19T14:40:02.591Z] [runtime-status] [4501] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~2s
+[debug] [2020-01-19T14:40:04.331Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: IDLE
+[debug] [2020-01-19T14:40:04.332Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T14:44:41.067Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T14:44:41.068Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T14:44:41.068Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T14:44:41.069Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T14:44:41.069Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:44:41.069Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: BUSY
+[debug] [2020-01-19T14:44:41.071Z] [runtime-status] [4501] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T14:44:41.072Z] [runtime-status] [4501] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T14:44:41.072Z] [runtime-status] [4501] Running api in mode HTTPS
+[debug] [2020-01-19T14:44:41.072Z] [runtime-status] [4501] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:44:41.076Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T14:44:41.083Z] [runtime-status] [4501] Ephemeral server handling GET request
+[debug] [2020-01-19T14:44:41.086Z] [runtime-status] [4501] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T14:44:41.625Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: IDLE
+[debug] [2020-01-19T14:44:41.625Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T14:44:53.618Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T14:44:53.619Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T14:44:53.619Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T14:44:53.619Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T14:44:53.619Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:44:53.619Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: BUSY
+[debug] [2020-01-19T14:44:53.619Z] [runtime-status] [4501] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T14:44:53.620Z] [runtime-status] [4501] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T14:44:53.620Z] [runtime-status] [4501] Running api in mode HTTPS
+[debug] [2020-01-19T14:44:53.620Z] [runtime-status] [4501] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:44:53.623Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T14:44:53.626Z] [runtime-status] [4501] Ephemeral server handling GET request
+[debug] [2020-01-19T14:44:53.626Z] [runtime-status] [4501] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T14:44:53.810Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: IDLE
+[debug] [2020-01-19T14:44:53.810Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T14:47:48.551Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T14:47:48.552Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T14:47:48.552Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T14:47:48.552Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T14:47:48.552Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:47:48.552Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: BUSY
+[debug] [2020-01-19T14:47:48.554Z] [runtime-status] [4501] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T14:47:48.554Z] [runtime-status] [4501] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T14:47:48.554Z] [runtime-status] [4501] Running api in mode HTTPS
+[debug] [2020-01-19T14:47:48.557Z] [runtime-status] [4501] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:47:48.559Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T14:47:48.563Z] [runtime-status] [4501] Ephemeral server handling GET request
+[debug] [2020-01-19T14:47:48.564Z] [runtime-status] [4501] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T14:47:48.658Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: IDLE
+[debug] [2020-01-19T14:47:48.658Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T14:55:55.270Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T14:55:55.270Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T14:55:55.270Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T14:55:55.270Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T14:55:55.271Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:55:55.271Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: BUSY
+[debug] [2020-01-19T14:55:55.271Z] [runtime-status] [4501] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T14:55:55.271Z] [runtime-status] [4501] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T14:55:55.272Z] [runtime-status] [4501] Running api in mode HTTPS
+[debug] [2020-01-19T14:55:55.272Z] [runtime-status] [4501] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_4501.sock
+[debug] [2020-01-19T14:55:55.273Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T14:55:55.276Z] [runtime-status] [4501] Ephemeral server handling GET request
+[debug] [2020-01-19T14:55:55.276Z] [runtime-status] [4501] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T14:55:55.615Z] [worker-api-3ce8ac4b-4c1f-4981-ac78-167e2d604dae]: IDLE
+[debug] [2020-01-19T14:55:55.615Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:37:50.023Z] ----------------------------------------------------------------------
+[debug] [2020-01-19T23:37:50.025Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-19T23:37:50.025Z] CLI Version:   7.11.0
+[debug] [2020-01-19T23:37:50.025Z] Platform:      darwin
+[debug] [2020-01-19T23:37:50.025Z] Node Version:  v10.16.0
+[debug] [2020-01-19T23:37:50.048Z] Time:          Sun Jan 19 2020 17:37:50 GMT-0600 (Central Standard Time)
+[debug] [2020-01-19T23:37:50.048Z] ----------------------------------------------------------------------
+[debug] [2020-01-19T23:37:50.048Z] 
+[debug] [2020-01-19T23:37:50.065Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-19T23:37:50.065Z] > authorizing via signed-in user
+[debug] [2020-01-19T23:37:50.065Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-19T23:37:50.066Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-19T23:37:50.067Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-19T23:37:50.331Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-19T23:37:50.344Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-19T23:37:50.517Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-19T23:37:50.518Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-19T23:37:50.748Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-19T23:37:51.043Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-19T23:37:51.043Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-19T23:37:51.044Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-19T23:37:51.044Z] [worker-~diagnostic~-21f947b6-f438-4bf9-80a2-cf6bb8f7c4c0]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6850.sock
+[debug] [2020-01-19T23:37:51.045Z] [worker-~diagnostic~-21f947b6-f438-4bf9-80a2-cf6bb8f7c4c0]: BUSY
+[debug] [2020-01-19T23:37:51.314Z] [runtime-status] [6850] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-19T23:37:51.315Z] [runtime-status] [6850] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-19T23:37:51.320Z] [runtime-status] [6850] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-19T23:37:51.322Z] [runtime-status] [6850] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:37:51.323Z] [runtime-status] [6850] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-19T23:37:52.534Z] [worker-~diagnostic~-21f947b6-f438-4bf9-80a2-cf6bb8f7c4c0]: IDLE
+[debug] [2020-01-19T23:39:09.394Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:39:09.394Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:39:09.394Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T23:39:09.398Z] [worker-pool] addWorker(api)
+[debug] [2020-01-19T23:39:09.398Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-19T23:39:09.398Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:39:09.398Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:39:09.398Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:39:09.986Z] [runtime-status] [6874] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-19T23:39:09.989Z] [runtime-status] [6874] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-19T23:39:09.993Z] [runtime-status] [6874] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-19T23:39:09.995Z] [runtime-status] [6874] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:39:09.996Z] [runtime-status] [6874] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:39:10.951Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:39:10.952Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:39:10.952Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:39:10.956Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:39:10.962Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:39:10.985Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:39:11.363Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:39:11.941Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:39:11.941Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:40:32.279Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:40:32.279Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:40:32.279Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T23:40:32.279Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:40:32.280Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:40:32.280Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:40:32.280Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:40:32.281Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:40:32.281Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:40:32.282Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:40:32.283Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:40:32.288Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:40:32.290Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:40:32.470Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:40:32.470Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:44:03.858Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:44:03.858Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:44:03.859Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T23:44:03.859Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:44:03.859Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:44:03.859Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:44:03.859Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:44:03.859Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:44:03.860Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:44:03.860Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:44:03.861Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:44:03.867Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:44:03.867Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:44:04.057Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:44:04.057Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:44:43.632Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:44:43.632Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:44:43.632Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T23:44:43.632Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:44:43.632Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:44:43.632Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:44:43.633Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:44:43.634Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:44:43.634Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:44:43.634Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:44:43.635Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:44:43.638Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:44:43.639Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:44:43.808Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:44:43.808Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:48:51.024Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:48:51.024Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:48:51.024Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T23:48:51.024Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:48:51.025Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:48:51.025Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:48:51.025Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:48:51.025Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:48:51.025Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:48:51.026Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:48:51.027Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:48:51.030Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:48:51.031Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:48:51.299Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:48:51.299Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:50:59.199Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:50:59.199Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:50:59.199Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T23:50:59.199Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.199Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.199Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:50:59.200Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:50:59.201Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:50:59.202Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:50:59.203Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.205Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:50:59.208Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:50:59.208Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:50:59.369Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:50:59.369Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:50:59.609Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:50:59.609Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:50:59.609Z] Accepted request GET /bendan-app/us-central1/api/Card.js --> api
+[debug] [2020-01-19T23:50:59.609Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.610Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.610Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:50:59.610Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T23:50:59.610Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:50:59.610Z] Accepted request GET /bendan-app/us-central1/api/home.js --> api
+[debug] [2020-01-19T23:50:59.616Z] [worker-pool] addWorker(api)
+[debug] [2020-01-19T23:50:59.616Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-01-19T23:50:59.616Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.616Z] [worker-api-78c7e3f4-3d6b-4dd8-aa9f-be957d9ed27a]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6952.sock
+[debug] [2020-01-19T23:50:59.617Z] [worker-api-78c7e3f4-3d6b-4dd8-aa9f-be957d9ed27a]: BUSY
+[debug] [2020-01-19T23:50:59.617Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:50:59.618Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:50:59.618Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:50:59.618Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.619Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:50:59.620Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-19T23:50:59.620Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.620Z] Accepted request GET /bendan-app/us-central1/api/App.js --> api
+[debug] [2020-01-19T23:50:59.626Z] [worker-pool] addWorker(api)
+[debug] [2020-01-19T23:50:59.626Z] [worker-pool] Adding worker with key api, total=3
+[debug] [2020-01-19T23:50:59.626Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.626Z] [worker-api-6f89b447-017d-4ce4-a3b9-f1aa6a12af34]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6953.sock
+[debug] [2020-01-19T23:50:59.626Z] [worker-api-6f89b447-017d-4ce4-a3b9-f1aa6a12af34]: BUSY
+[debug] [2020-01-19T23:50:59.627Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.627Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-19T23:50:59.627Z] Accepted request GET /bendan-app/us-central1/api/src/index.js --> api
+[debug] [2020-01-19T23:50:59.633Z] [worker-pool] addWorker(api)
+[debug] [2020-01-19T23:50:59.633Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-01-19T23:50:59.633Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.634Z] [worker-api-329a7d3f-3780-4446-a7eb-6d90ca0c5ff0]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6954.sock
+[debug] [2020-01-19T23:50:59.634Z] [worker-api-329a7d3f-3780-4446-a7eb-6d90ca0c5ff0]: BUSY
+[debug] [2020-01-19T23:50:59.644Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:50:59.645Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:50:59.646Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:50:59.646Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.751Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.751Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-19T23:50:59.751Z] Accepted request GET /bendan-app/us-central1/api/Card.js --> api
+[debug] [2020-01-19T23:50:59.751Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.753Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.754Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:50:59.754Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:50:59.755Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:50:59.755Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:50:59.755Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.756Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:50:59.761Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:50:59.761Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:50:59.762Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:50:59.763Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.784Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.785Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-19T23:50:59.785Z] Accepted request GET /bendan-app/us-central1/api/Card.js --> api
+[debug] [2020-01-19T23:50:59.785Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.791Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.791Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:50:59.792Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:50:59.794Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:50:59.794Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:50:59.794Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.794Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:50:59.801Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:50:59.801Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:50:59.803Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:50:59.803Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.811Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.811Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-19T23:50:59.811Z] Accepted request GET /bendan-app/us-central1/api/Card.js --> api
+[debug] [2020-01-19T23:50:59.811Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.811Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.811Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:50:59.813Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:50:59.813Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:50:59.813Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:50:59.813Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.815Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:50:59.819Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:50:59.822Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:50:59.822Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:50:59.822Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.839Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-19T23:50:59.839Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-19T23:50:59.839Z] Accepted request GET /bendan-app/us-central1/api/Card.js --> api
+[debug] [2020-01-19T23:50:59.839Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:50:59.839Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.846Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:50:59.848Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:50:59.849Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:50:59.849Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:50:59.849Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:50:59.849Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:50:59.856Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:50:59.857Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:50:59.857Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:50:59.857Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:51:00.872Z] [runtime-status] [6952] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-19T23:51:00.873Z] [runtime-status] [6954] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-19T23:51:00.873Z] [runtime-status] [6953] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-19T23:51:00.875Z] [runtime-status] [6952] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-19T23:51:00.876Z] [runtime-status] [6954] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-19T23:51:00.877Z] [runtime-status] [6953] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-19T23:51:00.879Z] [runtime-status] [6952] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-19T23:51:00.879Z] [runtime-status] [6954] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-19T23:51:00.880Z] [runtime-status] [6953] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-19T23:51:00.881Z] [runtime-status] [6954] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:51:00.882Z] [runtime-status] [6953] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:51:00.882Z] [runtime-status] [6954] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:51:00.882Z] [runtime-status] [6952] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:51:00.883Z] [runtime-status] [6953] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:51:00.883Z] [runtime-status] [6952] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:51:01.898Z] [runtime-status] [6954] Trigger "api" has been found, beginning invocation!
+[debug] [2020-01-19T23:51:01.898Z] [runtime-status] [6952] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:01.899Z] [runtime-status] [6954] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:01.899Z] [runtime-status] [6954] Running api in mode HTTPS
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:01.899Z] [runtime-status] [6952] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:01.899Z] [runtime-status] [6952] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:01.903Z] [runtime-status] [6953] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:01.903Z] [runtime-status] [6953] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:01.903Z] [runtime-status] [6953] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:01.905Z] [runtime-status] [6954] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6954.sock
+[debug] [2020-01-19T23:51:01.906Z] [runtime-status] [6952] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6952.sock
+[debug] [2020-01-19T23:51:01.909Z] [runtime-status] [6953] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6953.sock
+[debug] [2020-01-19T23:51:01.910Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:01.913Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:01.916Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:01.945Z] [runtime-status] [6953] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:01.946Z] [runtime-status] [6952] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:01.946Z] [runtime-status] [6954] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:01.955Z] [runtime-status] [6954] Ephemeral server survived.
+[debug] [2020-01-19T23:51:01.956Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-19T23:51:01.956Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-19T23:51:01.956Z] Accepted request GET /bendan-app/us-central1/api/src/index.js --> api
+[debug] [2020-01-19T23:51:01.956Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:01.956Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:01.956Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:01.957Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:01.958Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:01.958Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:01.958Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:01.960Z] [functions] Runtime ready! Sending request!
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:01.962Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-01-19T23:51:01.962Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-01-19T23:51:01.962Z] Accepted request GET /bendan-app/us-central1/api/App.js --> api
+[debug] [2020-01-19T23:51:01.965Z] [worker-pool] addWorker(api)
+[debug] [2020-01-19T23:51:01.965Z] [worker-pool] Adding worker with key api, total=5
+[debug] [2020-01-19T23:51:01.966Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:01.966Z] [worker-api-be78e854-e00e-44f7-9d2e-f0303ce2a936]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6956.sock
+[debug] [2020-01-19T23:51:01.966Z] [worker-api-be78e854-e00e-44f7-9d2e-f0303ce2a936]: BUSY
+[debug] [2020-01-19T23:51:01.966Z] [runtime-status] [6953] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:01.966Z] [worker-api-6f89b447-017d-4ce4-a3b9-f1aa6a12af34]: IDLE
+[debug] [2020-01-19T23:51:01.966Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-19T23:51:01.966Z] [worker-api-329a7d3f-3780-4446-a7eb-6d90ca0c5ff0]: IDLE
+[debug] [2020-01-19T23:51:01.967Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:51:01.967Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:01.967Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:01.967Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:01.967Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:01.968Z] [runtime-status] [6952] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:01.968Z] [worker-api-78c7e3f4-3d6b-4dd8-aa9f-be957d9ed27a]: IDLE
+[debug] [2020-01-19T23:51:01.968Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:51:01.994Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T23:51:01.994Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:01.994Z] Accepted request GET /bendan-app/us-central1/api/home.js --> api
+[debug] [2020-01-19T23:51:01.994Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:01.994Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:01.994Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:02.008Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.008Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.008Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.008Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.009Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.013Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.013Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:51:02.013Z] Accepted request GET /bendan-app/us-central1/api/src/index.js --> api
+[debug] [2020-01-19T23:51:02.013Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.013Z] [worker-api-78c7e3f4-3d6b-4dd8-aa9f-be957d9ed27a]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6952.sock
+[debug] [2020-01-19T23:51:02.013Z] [worker-api-78c7e3f4-3d6b-4dd8-aa9f-be957d9ed27a]: BUSY
+[debug] [2020-01-19T23:51:02.014Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.014Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.014Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.014Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.028Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.028Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:51:02.029Z] Accepted request GET /bendan-app/us-central1/api/home.js --> api
+[debug] [2020-01-19T23:51:02.029Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.029Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.029Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:02.030Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.030Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.030Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.030Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.032Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.034Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.036Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.036Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.036Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.042Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.042Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:51:02.042Z] Accepted request GET /bendan-app/us-central1/api/home.js --> api
+[debug] [2020-01-19T23:51:02.042Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.042Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.042Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:02.046Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.046Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.047Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.047Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.048Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.049Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.050Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.051Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.051Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.055Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.055Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-19T23:51:02.055Z] Accepted request GET /bendan-app/us-central1/api/home.js --> api
+[debug] [2020-01-19T23:51:02.055Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.055Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.055Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:02.061Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.063Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.064Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.064Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.066Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.069Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.070Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.071Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.071Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.113Z] [runtime-status] [6952] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.113Z] [runtime-status] [6952] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.113Z] [runtime-status] [6952] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.114Z] [runtime-status] [6952] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6952.sock
+[debug] [2020-01-19T23:51:02.115Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.121Z] [runtime-status] [6952] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.124Z] [runtime-status] [6952] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.127Z] [worker-api-78c7e3f4-3d6b-4dd8-aa9f-be957d9ed27a]: IDLE
+[debug] [2020-01-19T23:51:02.127Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.127Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.127Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.127Z] Accepted request GET /bendan-app/us-central1/api/src/index.js --> api
+[debug] [2020-01-19T23:51:02.127Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.128Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.128Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:02.128Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.128Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.128Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.128Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.129Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.130Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.132Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.132Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.132Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.136Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.136Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.136Z] Accepted request GET /bendan-app/us-central1/api/src/index.js --> api
+[debug] [2020-01-19T23:51:02.137Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.137Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.137Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:02.141Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.141Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.142Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.142Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.142Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.144Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.146Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.148Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.148Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.377Z] [runtime-status] [6956] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-19T23:51:02.380Z] [runtime-status] [6956] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-19T23:51:02.383Z] [runtime-status] [6956] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-19T23:51:02.384Z] [runtime-status] [6956] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:51:02.386Z] [runtime-status] [6956] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-19T23:51:02.778Z] [runtime-status] [6956] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.779Z] [runtime-status] [6956] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.779Z] [runtime-status] [6956] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.783Z] [runtime-status] [6956] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6956.sock
+[debug] [2020-01-19T23:51:02.787Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.802Z] [runtime-status] [6956] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.809Z] [runtime-status] [6956] Ephemeral server survived.
+[debug] [2020-01-19T23:51:02.813Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.813Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-19T23:51:02.814Z] Accepted request GET /bendan-app/us-central1/api/App.js --> api
+[debug] [2020-01-19T23:51:02.814Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.814Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.814Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.814Z] [worker-api-be78e854-e00e-44f7-9d2e-f0303ce2a936]: IDLE
+[debug] [2020-01-19T23:51:02.814Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.814Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.814Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.815Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.815Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.815Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.817Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.818Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.818Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.818Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:51:02.822Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:51:02.822Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.822Z] Accepted request GET /bendan-app/us-central1/api/App.js --> api
+[debug] [2020-01-19T23:51:02.823Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.823Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.823Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:02.829Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.829Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.829Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.829Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.830Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.834Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.834Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.835Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.835Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:51:02.840Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:51:02.840Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:51:02.840Z] Accepted request GET /bendan-app/us-central1/api/App.js --> api
+[debug] [2020-01-19T23:51:02.840Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:51:02.840Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.840Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:51:02.845Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:51:02.845Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:51:02.845Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:51:02.845Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:51:02.846Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:51:02.851Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:51:02.851Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:51:02.852Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:51:02.852Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-19T23:56:06.771Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-19T23:56:06.772Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-19T23:56:06.772Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-19T23:56:06.772Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-19T23:56:06.772Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:56:06.772Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-19T23:56:06.773Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-19T23:56:06.774Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-19T23:56:06.774Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-19T23:56:06.775Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-19T23:56:06.777Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-19T23:56:06.781Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-19T23:56:06.783Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-19T23:56:07.175Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-19T23:56:07.175Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T00:08:49.446Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T00:08:49.446Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T00:08:49.446Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-20T00:08:49.446Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T00:08:49.446Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-20T00:08:49.446Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-20T00:08:49.447Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T00:08:49.447Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T00:08:49.447Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-20T00:08:49.450Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-20T00:08:49.450Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T00:08:49.453Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-20T00:08:49.453Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T00:08:49.668Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-20T00:08:49.668Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T00:08:59.821Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T00:08:59.821Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T00:08:59.821Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-20T00:08:59.821Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T00:08:59.821Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-20T00:08:59.822Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-20T00:08:59.822Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T00:08:59.823Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T00:08:59.823Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-20T00:08:59.823Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-20T00:08:59.823Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T00:08:59.825Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-20T00:08:59.826Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T00:08:59.899Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-20T00:08:59.899Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T00:09:05.581Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T00:09:05.581Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T00:09:05.581Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-20T00:09:05.581Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T00:09:05.582Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-20T00:09:05.582Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-20T00:09:05.582Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T00:09:05.582Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T00:09:05.583Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-20T00:09:05.583Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-20T00:09:05.584Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T00:09:05.586Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-20T00:09:05.587Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T00:09:05.694Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-20T00:09:05.694Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T00:10:17.939Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T00:10:17.939Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T00:10:17.939Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-20T00:10:17.939Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T00:10:17.941Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-20T00:10:17.941Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: BUSY
+[debug] [2020-01-20T00:10:17.946Z] [runtime-status] [6874] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T00:10:17.946Z] [runtime-status] [6874] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T00:10:17.947Z] [runtime-status] [6874] Running api in mode HTTPS
+[debug] [2020-01-20T00:10:17.947Z] [runtime-status] [6874] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_6874.sock
+[debug] [2020-01-20T00:10:17.948Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T00:10:17.951Z] [runtime-status] [6874] Ephemeral server handling GET request
+[debug] [2020-01-20T00:10:17.953Z] [runtime-status] [6874] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T00:10:18.031Z] [worker-api-af0c44a7-87ac-4194-a949-64ed9c6d1162]: IDLE
+[debug] [2020-01-20T00:10:18.031Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T21:54:43.007Z] ----------------------------------------------------------------------
+[debug] [2020-01-20T21:54:43.009Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-20T21:54:43.009Z] CLI Version:   7.11.0
+[debug] [2020-01-20T21:54:43.009Z] Platform:      darwin
+[debug] [2020-01-20T21:54:43.009Z] Node Version:  v10.16.0
+[debug] [2020-01-20T21:54:43.010Z] Time:          Mon Jan 20 2020 15:54:43 GMT-0600 (Central Standard Time)
+[debug] [2020-01-20T21:54:43.010Z] ----------------------------------------------------------------------
+[debug] [2020-01-20T21:54:43.010Z] 
+[debug] [2020-01-20T21:54:43.023Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-20T21:54:43.023Z] > authorizing via signed-in user
+[debug] [2020-01-20T21:54:43.023Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-20T21:54:43.025Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-20T21:54:43.026Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-20T21:54:44.127Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-20T21:54:44.142Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-20T21:54:46.321Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-20T21:54:46.322Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-20T21:54:47.940Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-20T21:54:48.235Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T21:54:48.235Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-20T21:54:48.236Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T21:54:48.236Z] [worker-~diagnostic~-fd20b15b-7a1d-417f-bf46-a04d91957dab]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10228.sock
+[debug] [2020-01-20T21:54:48.237Z] [worker-~diagnostic~-fd20b15b-7a1d-417f-bf46-a04d91957dab]: BUSY
+[debug] [2020-01-20T21:54:48.681Z] [runtime-status] [10228] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-20T21:54:48.682Z] [runtime-status] [10228] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-20T21:54:48.684Z] [runtime-status] [10228] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T21:54:48.685Z] [runtime-status] [10228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T21:54:48.686Z] [runtime-status] [10228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-20T21:54:49.720Z] [worker-~diagnostic~-fd20b15b-7a1d-417f-bf46-a04d91957dab]: IDLE
+[debug] [2020-01-20T21:56:58.594Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T21:56:58.594Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T21:56:58.594Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-20T21:56:58.599Z] [worker-pool] addWorker(api)
+[debug] [2020-01-20T21:56:58.599Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-20T21:56:58.599Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T21:56:58.600Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T21:56:58.600Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: BUSY
+[debug] [2020-01-20T21:56:59.204Z] [runtime-status] [10247] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-20T21:56:59.207Z] [runtime-status] [10247] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-20T21:56:59.210Z] [runtime-status] [10247] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T21:56:59.216Z] [runtime-status] [10247] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T21:56:59.217Z] [runtime-status] [10247] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T21:57:00.249Z] [runtime-status] [10247] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T21:57:00.249Z] [runtime-status] [10247] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T21:57:00.250Z] [runtime-status] [10247] Running api in mode HTTPS
+[debug] [2020-01-20T21:57:00.260Z] [runtime-status] [10247] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T21:57:00.266Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T21:57:00.277Z] [runtime-status] [10247] Ephemeral server handling GET request
+[debug] [2020-01-20T21:57:00.827Z] [runtime-status] [10247] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~4s
+[debug] [2020-01-20T21:57:04.262Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: IDLE
+[debug] [2020-01-20T21:57:04.262Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T21:59:45.445Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T21:59:45.445Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T21:59:45.445Z] Accepted request GET /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T21:59:45.445Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T21:59:45.445Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T21:59:45.445Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: BUSY
+[debug] [2020-01-20T21:59:45.446Z] [runtime-status] [10247] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T21:59:45.447Z] [runtime-status] [10247] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T21:59:45.447Z] [runtime-status] [10247] Running api in mode HTTPS
+[debug] [2020-01-20T21:59:45.447Z] [runtime-status] [10247] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T21:59:45.449Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T21:59:45.491Z] [runtime-status] [10247] Ephemeral server handling GET request
+[debug] [2020-01-20T21:59:45.494Z] [runtime-status] [10247] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T21:59:45.495Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: IDLE
+[debug] [2020-01-20T21:59:45.495Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T21:59:52.025Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T21:59:52.026Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T21:59:52.026Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T21:59:52.026Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T21:59:52.026Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T21:59:52.026Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: BUSY
+[debug] [2020-01-20T21:59:52.029Z] [runtime-status] [10247] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T21:59:52.030Z] [runtime-status] [10247] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T21:59:52.030Z] [runtime-status] [10247] Running api in mode HTTPS
+[debug] [2020-01-20T21:59:52.030Z] [runtime-status] [10247] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T21:59:52.040Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T21:59:52.043Z] [runtime-status] [10247] Ephemeral server handling POST request
+[debug] [2020-01-20T21:59:52.044Z] [runtime-status] [10247] Ephemeral server survived.
+[info] >  TypeError: Cannot read property 'trim' of undefined
+[info] >      at isEmpty (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:27:14)
+[info] >      at app.post (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:155:7)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:112:3)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:281:22
+[info] >      at Function.process_params (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:335:12)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:275:10)
+[info] >      at expressInit (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/middleware/init.js:40:5)
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T21:59:52.051Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: IDLE
+[debug] [2020-01-20T21:59:52.051Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:00:58.322Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:00:58.322Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:00:58.322Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T22:00:58.322Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:00:58.322Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T22:00:58.322Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: BUSY
+[debug] [2020-01-20T22:00:58.323Z] [runtime-status] [10247] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:00:58.323Z] [runtime-status] [10247] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:00:58.323Z] [runtime-status] [10247] Running api in mode HTTPS
+[debug] [2020-01-20T22:00:58.324Z] [runtime-status] [10247] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T22:00:58.326Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:00:58.335Z] [runtime-status] [10247] Ephemeral server handling POST request
+[debug] [2020-01-20T22:00:58.352Z] [runtime-status] [10247] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~3s
+[debug] [2020-01-20T22:01:01.471Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: IDLE
+[debug] [2020-01-20T22:01:01.471Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:04:11.073Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:04:11.074Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:04:11.074Z] Accepted request POST /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-20T22:04:11.074Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:04:11.074Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T22:04:11.074Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: BUSY
+[debug] [2020-01-20T22:04:11.076Z] [runtime-status] [10247] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:04:11.076Z] [runtime-status] [10247] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:04:11.076Z] [runtime-status] [10247] Running api in mode HTTPS
+[debug] [2020-01-20T22:04:11.076Z] [runtime-status] [10247] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T22:04:11.078Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:04:11.083Z] [runtime-status] [10247] Ephemeral server handling POST request
+[debug] [2020-01-20T22:04:11.088Z] [runtime-status] [10247] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:04:12.071Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: IDLE
+[debug] [2020-01-20T22:04:12.071Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:04:42.653Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:04:42.653Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:04:42.653Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-20T22:04:42.653Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:04:42.653Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T22:04:42.653Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: BUSY
+[debug] [2020-01-20T22:04:42.653Z] [runtime-status] [10247] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:04:42.654Z] [runtime-status] [10247] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:04:42.654Z] [runtime-status] [10247] Running api in mode HTTPS
+[debug] [2020-01-20T22:04:42.654Z] [runtime-status] [10247] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10247.sock
+[debug] [2020-01-20T22:04:42.655Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:04:42.657Z] [runtime-status] [10247] Ephemeral server handling GET request
+[debug] [2020-01-20T22:04:42.658Z] [runtime-status] [10247] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:04:42.982Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: IDLE
+[debug] [2020-01-20T22:04:42.982Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:09:32.034Z] File /Users/macbook/Registration/Registration-App-Functions/functions/index.js changed, reloading triggers
+[debug] [2020-01-20T22:09:33.039Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-20T22:09:33.039Z] [worker-~diagnostic~-fd20b15b-7a1d-417f-bf46-a04d91957dab]: FINISHING
+[debug] [2020-01-20T22:09:33.040Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-20T22:09:33.040Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: FINISHING
+[debug] [2020-01-20T22:09:33.051Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-20T22:09:33.051Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-20T22:09:33.051Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-20T22:09:33.051Z] [worker-~diagnostic~-911b6ca9-c665-40e8-b960-90b22db4e087]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10313.sock
+[debug] [2020-01-20T22:09:33.051Z] [worker-~diagnostic~-911b6ca9-c665-40e8-b960-90b22db4e087]: BUSY
+[debug] [2020-01-20T22:09:33.054Z] [worker-~diagnostic~-fd20b15b-7a1d-417f-bf46-a04d91957dab]: exited
+[debug] [2020-01-20T22:09:33.054Z] [worker-~diagnostic~-fd20b15b-7a1d-417f-bf46-a04d91957dab]: FINISHED
+[debug] [2020-01-20T22:09:33.054Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: exited
+[debug] [2020-01-20T22:09:33.054Z] [worker-api-74e41042-a33a-438f-a7bd-e39d1da7c4ec]: FINISHED
+[debug] [2020-01-20T22:09:33.924Z] [runtime-status] [10313] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-20T22:09:33.927Z] [runtime-status] [10313] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-20T22:09:33.931Z] [runtime-status] [10313] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T22:09:33.934Z] [runtime-status] [10313] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T22:09:33.935Z] [runtime-status] [10313] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T22:09:35.081Z] [worker-~diagnostic~-911b6ca9-c665-40e8-b960-90b22db4e087]: IDLE
+[debug] [2020-01-20T22:10:19.167Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:10:19.167Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:10:19.167Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T22:10:19.168Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-20T22:10:19.168Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-20T22:10:19.173Z] [worker-pool] addWorker(api)
+[debug] [2020-01-20T22:10:19.173Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-20T22:10:19.173Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:10:19.174Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:10:19.174Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:10:19.699Z] [runtime-status] [10314] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-20T22:10:19.702Z] [runtime-status] [10314] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-20T22:10:19.705Z] [runtime-status] [10314] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T22:10:19.706Z] [runtime-status] [10314] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T22:10:19.707Z] [runtime-status] [10314] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T22:10:20.650Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:10:20.651Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:10:20.651Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:10:20.657Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:10:20.660Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:10:20.695Z] [runtime-status] [10314] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-20T22:10:20.710Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:10:20.712Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:10:20.712Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:10:33.850Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:10:33.850Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:10:33.850Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T22:10:33.850Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:10:33.851Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:10:33.851Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:10:33.852Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:10:33.852Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:10:33.853Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:10:33.853Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:10:33.854Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:10:33.858Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:10:33.860Z] [runtime-status] [10314] Ephemeral server survived.
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:10:33.864Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:10:33.864Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:10:41.794Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:10:41.794Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:10:41.794Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T22:10:41.794Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:10:41.794Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:10:41.794Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:10:41.798Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:10:41.798Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:10:41.799Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:10:41.799Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:10:41.800Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:10:41.804Z] [runtime-status] [10314] Ephemeral server handling POST request
+[info] >  { [Error: The email address is badly formatted.]
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.' }
+[debug] [2020-01-20T22:10:41.808Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:10:41.809Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:10:41.809Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:11:09.160Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:11:09.160Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:11:09.160Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T22:11:09.160Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:11:09.160Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:11:09.160Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:11:09.161Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:11:09.162Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:11:09.162Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:11:09.163Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:11:09.165Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:11:09.169Z] [runtime-status] [10314] Ephemeral server handling POST request
+[info] >  { [Error: The password is invalid or the user does not have a password.]
+[info] >    code: 'auth/wrong-password',
+[info] >    message:
+[info] >     'The password is invalid or the user does not have a password.' }
+[debug] [2020-01-20T22:11:09.171Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:11:09.173Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:11:09.173Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:11:15.842Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:11:15.842Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:11:15.843Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T22:11:15.843Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:11:15.843Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:11:15.843Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:11:15.844Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:11:15.845Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:11:15.845Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:11:15.845Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:11:15.846Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:11:15.850Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:11:15.878Z] [runtime-status] [10314] Ephemeral server survived.
+[info] >  { [Error: The password is invalid or the user does not have a password.]
+[info] >    code: 'auth/wrong-password',
+[info] >    message:
+[info] >     'The password is invalid or the user does not have a password.' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:11:17.323Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:11:17.323Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:11:22.166Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:11:22.167Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:11:22.167Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-01-20T22:11:22.167Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:11:22.167Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:11:22.167Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:11:22.168Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:11:22.168Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:11:22.168Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:11:22.168Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:11:22.170Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:11:22.173Z] [runtime-status] [10314] Ephemeral server handling POST request
+[info] >  { [Error: The password is invalid or the user does not have a password.]
+[info] >    code: 'auth/wrong-password',
+[info] >    message:
+[info] >     'The password is invalid or the user does not have a password.' }
+[debug] [2020-01-20T22:11:22.175Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:11:22.175Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:11:22.175Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:12:45.192Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:12:45.193Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:12:45.193Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:12:45.193Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:12:45.193Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:12:45.193Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:12:45.193Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:12:45.194Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:12:45.194Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:12:45.195Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:12:45.198Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:12:45.202Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:12:45.204Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:12:45.205Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:12:45.205Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:12:57.726Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:12:57.727Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:12:57.727Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:12:57.727Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:12:57.727Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:12:57.727Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:12:57.727Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:12:57.728Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:12:57.728Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:12:57.728Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:12:57.729Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:12:57.733Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:12:57.734Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:12:57.734Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:12:57.734Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:14:25.472Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:14:25.472Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:14:25.472Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:14:25.472Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:14:25.472Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:14:25.472Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:14:25.473Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:14:25.473Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:14:25.473Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:14:25.473Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:14:25.475Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:14:25.478Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:14:25.480Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:14:25.480Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:14:25.480Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:14:54.216Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:14:54.217Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:14:54.218Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:14:54.218Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:14:54.218Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:14:54.218Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:14:54.218Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:14:54.219Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:14:54.219Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:14:54.219Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:14:54.220Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:14:54.224Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:14:54.226Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:14:54.226Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:14:54.226Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:15:10.922Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:15:10.922Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:15:10.922Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:15:10.922Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:15:10.922Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:15:10.922Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:15:10.925Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:15:10.926Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:15:10.926Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:15:10.926Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:15:10.927Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:15:10.930Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:15:10.935Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:15:10.935Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:15:10.935Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] >  Error: Value for argument "documentPath" must point to a document, but was "/users/". Your path does not contain an even number of components.
+[info] >      at Firestore.doc (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/@google-cloud/firestore/build/src/index.js:398:19)
+[info] >      at app.post (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:70:6)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:112:3)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:281:22
+[info] >      at Function.process_params (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:335:12)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:275:10)
+[info] >      at expressInit (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/middleware/init.js:40:5)
+[debug] [2020-01-20T22:16:00.324Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:16:00.324Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:16:00.324Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:16:00.324Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:16:00.324Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:16:00.325Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:16:00.327Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:16:00.331Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:16:00.331Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:16:00.332Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:16:00.333Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:16:00.338Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:16:00.815Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~9s
+[debug] [2020-01-20T22:16:10.341Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:16:10.341Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:16:21.237Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:16:21.237Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:16:21.237Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:16:21.237Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:16:21.237Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:16:21.237Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:16:21.238Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:16:21.238Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:16:21.239Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:16:21.239Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:16:21.240Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:16:21.243Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:16:21.244Z] [runtime-status] [10314] Ephemeral server survived.
+[info] >  Error: Value for argument "documentPath" must point to a document, but was "/users/". Your path does not contain an even number of components.
+[info] >      at Firestore.doc (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/@google-cloud/firestore/build/src/index.js:398:19)
+[info] >      at app.post (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:70:6)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:112:3)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:281:22
+[info] >      at Function.process_params (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:335:12)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:275:10)
+[info] >      at expressInit (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/middleware/init.js:40:5)
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:16:21.247Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:16:21.247Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:16:53.151Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:16:53.151Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:16:53.151Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:16:53.152Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:16:53.152Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:16:53.152Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:16:53.152Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:16:53.152Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:16:53.152Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:16:53.153Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:16:53.154Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:16:53.156Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:16:53.157Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:16:53.158Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:16:53.158Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] >  Error: Value for argument "documentPath" must point to a document, but was "/users/". Your path does not contain an even number of components.
+[info] >      at Firestore.doc (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/@google-cloud/firestore/build/src/index.js:398:19)
+[info] >      at app.post (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:70:6)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:112:3)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:281:22
+[info] >      at Function.process_params (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:335:12)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:275:10)
+[info] >      at expressInit (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/middleware/init.js:40:5)
+[debug] [2020-01-20T22:16:57.184Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:16:57.184Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:16:57.184Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:16:57.184Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:16:57.184Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:16:57.184Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:16:57.184Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:16:57.185Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:16:57.185Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:16:57.186Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:16:57.187Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:16:57.190Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:16:57.192Z] [runtime-status] [10314] Ephemeral server survived.
+[info] >  Error: Value for argument "documentPath" must point to a document, but was "/users/". Your path does not contain an even number of components.
+[info] >      at Firestore.doc (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/@google-cloud/firestore/build/src/index.js:398:19)
+[info] >      at app.post (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:70:6)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:112:3)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:281:22
+[info] >      at Function.process_params (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:335:12)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:275:10)
+[info] >      at expressInit (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/middleware/init.js:40:5)
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:16:57.195Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:16:57.195Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:20:29.468Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:20:29.468Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:20:29.468Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:20:29.468Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:20:29.469Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:20:29.469Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:20:29.471Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:20:29.472Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:20:29.473Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:20:29.476Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:20:29.479Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:20:29.486Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:20:29.491Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:20:29.492Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:20:29.492Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] >  Error: Value for argument "documentPath" must point to a document, but was "/users/". Your path does not contain an even number of components.
+[info] >      at Firestore.doc (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/@google-cloud/firestore/build/src/index.js:398:19)
+[info] >      at app.post (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:70:6)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >      at Route.dispatch (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:112:3)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:281:22
+[info] >      at Function.process_params (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:335:12)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/index.js:275:10)
+[info] >      at expressInit (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/middleware/init.js:40:5)
+[debug] [2020-01-20T22:20:38.064Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:20:38.064Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:20:38.064Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:20:38.064Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:20:38.064Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:20:38.064Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:20:38.064Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:20:38.065Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:20:38.065Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:20:38.065Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:20:38.067Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:20:38.070Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:20:38.072Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:20:38.073Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:20:38.073Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-20T22:20:50.836Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-20T22:20:50.836Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-20T22:20:50.836Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-20T22:20:50.836Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-20T22:20:50.836Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:20:50.836Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: BUSY
+[debug] [2020-01-20T22:20:50.837Z] [runtime-status] [10314] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-20T22:20:50.837Z] [runtime-status] [10314] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-20T22:20:50.837Z] [runtime-status] [10314] Running api in mode HTTPS
+[debug] [2020-01-20T22:20:50.837Z] [runtime-status] [10314] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_10314.sock
+[debug] [2020-01-20T22:20:50.838Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-20T22:20:50.841Z] [runtime-status] [10314] Ephemeral server handling POST request
+[debug] [2020-01-20T22:20:50.842Z] [runtime-status] [10314] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-20T22:20:50.842Z] [worker-api-a1acca7f-b58b-4949-b143-ab203e9eb8c9]: IDLE
+[debug] [2020-01-20T22:20:50.842Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T21:54:51.230Z] ----------------------------------------------------------------------
+[debug] [2020-01-21T21:54:51.232Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-21T21:54:51.232Z] CLI Version:   7.11.0
+[debug] [2020-01-21T21:54:51.232Z] Platform:      darwin
+[debug] [2020-01-21T21:54:51.232Z] Node Version:  v10.16.0
+[debug] [2020-01-21T21:54:51.233Z] Time:          Tue Jan 21 2020 15:54:51 GMT-0600 (Central Standard Time)
+[debug] [2020-01-21T21:54:51.233Z] ----------------------------------------------------------------------
+[debug] [2020-01-21T21:54:51.233Z] 
+[debug] [2020-01-21T21:54:51.248Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-21T21:54:51.248Z] > authorizing via signed-in user
+[debug] [2020-01-21T21:54:51.248Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-21T21:54:51.250Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-21T21:54:51.250Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-21T21:54:51.440Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-21T21:54:51.452Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-21T21:54:51.670Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-21T21:54:51.671Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-21T21:54:51.915Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-21T21:54:52.210Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-21T21:54:52.211Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-21T21:54:52.211Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-21T21:54:52.211Z] [worker-~diagnostic~-7a5f9087-7a02-4e89-b061-6e9e303d57d2]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18613.sock
+[debug] [2020-01-21T21:54:52.212Z] [worker-~diagnostic~-7a5f9087-7a02-4e89-b061-6e9e303d57d2]: BUSY
+[debug] [2020-01-21T21:54:52.540Z] [runtime-status] [18613] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-21T21:54:52.542Z] [runtime-status] [18613] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-21T21:54:52.546Z] [runtime-status] [18613] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-21T21:54:52.548Z] [runtime-status] [18613] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T21:54:52.549Z] [runtime-status] [18613] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-21T21:54:53.615Z] [worker-~diagnostic~-7a5f9087-7a02-4e89-b061-6e9e303d57d2]: IDLE
+[debug] [2020-01-21T21:55:10.493Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-21T21:55:10.493Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-21T21:55:10.493Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-21T21:55:10.496Z] [worker-pool] addWorker(api)
+[debug] [2020-01-21T21:55:10.496Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-21T21:55:10.496Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-21T21:55:10.496Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:55:10.496Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: BUSY
+[debug] [2020-01-21T21:55:11.050Z] [runtime-status] [18631] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-21T21:55:11.053Z] [runtime-status] [18631] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-21T21:55:11.057Z] [runtime-status] [18631] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-21T21:55:11.058Z] [runtime-status] [18631] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T21:55:11.059Z] [runtime-status] [18631] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T21:55:11.992Z] [runtime-status] [18631] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-21T21:55:11.993Z] [runtime-status] [18631] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-21T21:55:11.993Z] [runtime-status] [18631] Running api in mode HTTPS
+[debug] [2020-01-21T21:55:11.998Z] [runtime-status] [18631] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:55:12.004Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-21T21:55:12.017Z] [runtime-status] [18631] Ephemeral server handling GET request
+[debug] [2020-01-21T21:55:12.429Z] [runtime-status] [18631] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-21T21:55:13.066Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: IDLE
+[debug] [2020-01-21T21:55:13.066Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T21:56:02.799Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-21T21:56:02.799Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-21T21:56:02.800Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-21T21:56:02.800Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-21T21:56:02.800Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:56:02.800Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: BUSY
+[debug] [2020-01-21T21:56:02.800Z] [runtime-status] [18631] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-21T21:56:02.801Z] [runtime-status] [18631] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-21T21:56:02.801Z] [runtime-status] [18631] Running api in mode HTTPS
+[debug] [2020-01-21T21:56:02.801Z] [runtime-status] [18631] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:56:02.803Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-21T21:56:02.840Z] [runtime-status] [18631] Ephemeral server handling POST request
+[debug] [2020-01-21T21:56:02.843Z] [runtime-status] [18631] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-21T21:56:02.844Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: IDLE
+[debug] [2020-01-21T21:56:02.844Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T21:56:12.991Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-21T21:56:12.992Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-21T21:56:12.992Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-21T21:56:12.992Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-21T21:56:12.992Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:56:12.992Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: BUSY
+[debug] [2020-01-21T21:56:12.992Z] [runtime-status] [18631] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-21T21:56:12.993Z] [runtime-status] [18631] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-21T21:56:12.993Z] [runtime-status] [18631] Running api in mode HTTPS
+[debug] [2020-01-21T21:56:12.993Z] [runtime-status] [18631] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:56:12.995Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-21T21:56:12.999Z] [runtime-status] [18631] Ephemeral server handling POST request
+[debug] [2020-01-21T21:56:13.001Z] [runtime-status] [18631] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-21T21:56:13.001Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: IDLE
+[debug] [2020-01-21T21:56:13.001Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T21:56:28.207Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-21T21:56:28.208Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-21T21:56:28.208Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-21T21:56:28.208Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-21T21:56:28.209Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:56:28.209Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: BUSY
+[debug] [2020-01-21T21:56:28.209Z] [runtime-status] [18631] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-21T21:56:28.210Z] [runtime-status] [18631] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-21T21:56:28.210Z] [runtime-status] [18631] Running api in mode HTTPS
+[debug] [2020-01-21T21:56:28.210Z] [runtime-status] [18631] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:56:28.212Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-21T21:56:28.214Z] [runtime-status] [18631] Ephemeral server handling POST request
+[debug] [2020-01-21T21:56:28.216Z] [runtime-status] [18631] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-21T21:56:28.217Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: IDLE
+[debug] [2020-01-21T21:56:28.217Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T21:57:19.979Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-21T21:57:19.980Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-21T21:57:19.980Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-21T21:57:19.980Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-21T21:57:19.980Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:57:19.980Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: BUSY
+[debug] [2020-01-21T21:57:19.980Z] [runtime-status] [18631] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-21T21:57:19.981Z] [runtime-status] [18631] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-21T21:57:19.981Z] [runtime-status] [18631] Running api in mode HTTPS
+[debug] [2020-01-21T21:57:19.981Z] [runtime-status] [18631] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T21:57:19.982Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-21T21:57:19.988Z] [runtime-status] [18631] Ephemeral server handling POST request
+[debug] [2020-01-21T21:57:19.989Z] [runtime-status] [18631] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-21T21:57:19.989Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: IDLE
+[debug] [2020-01-21T21:57:19.989Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T22:14:54.883Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-21T22:14:54.884Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-21T22:14:54.884Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-21T22:14:54.884Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-21T22:14:54.892Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T22:14:54.892Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: BUSY
+[debug] [2020-01-21T22:14:54.896Z] [runtime-status] [18631] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-21T22:14:54.897Z] [runtime-status] [18631] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-21T22:14:54.897Z] [runtime-status] [18631] Running api in mode HTTPS
+[debug] [2020-01-21T22:14:54.899Z] [runtime-status] [18631] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18631.sock
+[debug] [2020-01-21T22:14:54.905Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-21T22:14:54.912Z] [runtime-status] [18631] Ephemeral server handling POST request
+[debug] [2020-01-21T22:14:54.915Z] [runtime-status] [18631] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-21T22:14:54.915Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: IDLE
+[debug] [2020-01-21T22:14:54.915Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T22:16:04.893Z] File /Users/macbook/Registration/Registration-App-Functions/functions/index.js changed, reloading triggers
+[debug] [2020-01-21T22:16:05.898Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-21T22:16:05.899Z] [worker-~diagnostic~-7a5f9087-7a02-4e89-b061-6e9e303d57d2]: FINISHING
+[debug] [2020-01-21T22:16:05.899Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-21T22:16:05.900Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: FINISHING
+[debug] [2020-01-21T22:16:05.905Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-21T22:16:05.905Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-21T22:16:05.905Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-21T22:16:05.905Z] [worker-~diagnostic~-a8ec23aa-3107-4c77-af37-092613551e0b]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18689.sock
+[debug] [2020-01-21T22:16:05.905Z] [worker-~diagnostic~-a8ec23aa-3107-4c77-af37-092613551e0b]: BUSY
+[debug] [2020-01-21T22:16:05.911Z] [worker-~diagnostic~-7a5f9087-7a02-4e89-b061-6e9e303d57d2]: exited
+[debug] [2020-01-21T22:16:05.911Z] [worker-~diagnostic~-7a5f9087-7a02-4e89-b061-6e9e303d57d2]: FINISHED
+[debug] [2020-01-21T22:16:05.912Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: exited
+[debug] [2020-01-21T22:16:05.912Z] [worker-api-b9226ce5-c807-4a42-94ad-ef740acd0678]: FINISHED
+[debug] [2020-01-21T22:16:06.642Z] [runtime-status] [18689] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-21T22:16:06.644Z] [runtime-status] [18689] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-21T22:16:06.648Z] [runtime-status] [18689] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-21T22:16:06.649Z] [runtime-status] [18689] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T22:16:06.650Z] [runtime-status] [18689] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T22:16:07.707Z] [worker-~diagnostic~-a8ec23aa-3107-4c77-af37-092613551e0b]: IDLE
+[debug] [2020-01-21T22:16:17.689Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-21T22:16:17.690Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-21T22:16:17.690Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-21T22:16:17.690Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-21T22:16:17.690Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-21T22:16:17.694Z] [worker-pool] addWorker(api)
+[debug] [2020-01-21T22:16:17.694Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-21T22:16:17.694Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-21T22:16:17.694Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18690.sock
+[debug] [2020-01-21T22:16:17.694Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: BUSY
+[debug] [2020-01-21T22:16:17.979Z] [runtime-status] [18690] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-21T22:16:17.981Z] [runtime-status] [18690] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-21T22:16:17.984Z] [runtime-status] [18690] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-21T22:16:17.985Z] [runtime-status] [18690] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T22:16:17.986Z] [runtime-status] [18690] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T22:16:18.392Z] [runtime-status] [18690] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-21T22:16:18.393Z] [runtime-status] [18690] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-21T22:16:18.393Z] [runtime-status] [18690] Running api in mode HTTPS
+[debug] [2020-01-21T22:16:18.397Z] [runtime-status] [18690] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18690.sock
+[debug] [2020-01-21T22:16:18.401Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-21T22:16:18.431Z] [runtime-status] [18690] Ephemeral server handling POST request
+[debug] [2020-01-21T22:16:18.439Z] [runtime-status] [18690] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-21T22:16:18.440Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: IDLE
+[debug] [2020-01-21T22:16:18.440Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T22:16:27.010Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-21T22:16:27.012Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-21T22:16:27.012Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-21T22:16:27.012Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-21T22:16:27.012Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18690.sock
+[debug] [2020-01-21T22:16:27.012Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: BUSY
+[debug] [2020-01-21T22:16:27.013Z] [runtime-status] [18690] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-21T22:16:27.014Z] [runtime-status] [18690] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-21T22:16:27.014Z] [runtime-status] [18690] Running api in mode HTTPS
+[debug] [2020-01-21T22:16:27.015Z] [runtime-status] [18690] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18690.sock
+[debug] [2020-01-21T22:16:27.016Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-21T22:16:27.019Z] [runtime-status] [18690] Ephemeral server handling POST request
+[debug] [2020-01-21T22:16:27.021Z] [runtime-status] [18690] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-21T22:16:27.022Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: IDLE
+[debug] [2020-01-21T22:16:27.022Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-21T22:32:49.668Z] File /Users/macbook/Registration/Registration-App-Functions/functions/util/validators.js changed, reloading triggers
+[debug] [2020-01-21T22:32:50.675Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-21T22:32:50.675Z] [worker-~diagnostic~-a8ec23aa-3107-4c77-af37-092613551e0b]: FINISHING
+[debug] [2020-01-21T22:32:50.676Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-21T22:32:50.676Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: FINISHING
+[debug] [2020-01-21T22:32:50.685Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-21T22:32:50.685Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-21T22:32:50.685Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-21T22:32:50.685Z] [worker-~diagnostic~-abc337cf-5236-455b-a74d-d298fe0e81cb]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18750.sock
+[debug] [2020-01-21T22:32:50.685Z] [worker-~diagnostic~-abc337cf-5236-455b-a74d-d298fe0e81cb]: BUSY
+[debug] [2020-01-21T22:32:50.689Z] [worker-~diagnostic~-a8ec23aa-3107-4c77-af37-092613551e0b]: exited
+[debug] [2020-01-21T22:32:50.689Z] [worker-~diagnostic~-a8ec23aa-3107-4c77-af37-092613551e0b]: FINISHED
+[debug] [2020-01-21T22:32:50.689Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: exited
+[debug] [2020-01-21T22:32:50.689Z] [worker-api-f2b92949-e67e-4315-b4b1-99d02e30f7a2]: FINISHED
+[debug] [2020-01-21T22:32:51.361Z] [runtime-status] [18750] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-21T22:32:51.363Z] [runtime-status] [18750] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-21T22:32:51.367Z] [runtime-status] [18750] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-21T22:32:51.368Z] [runtime-status] [18750] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T22:32:51.369Z] [runtime-status] [18750] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T22:32:52.930Z] [worker-~diagnostic~-abc337cf-5236-455b-a74d-d298fe0e81cb]: IDLE
