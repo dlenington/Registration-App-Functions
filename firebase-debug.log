@@ -2371,3 +2371,83 @@ SyntaxError: Unexpected token )
 [info] i  functions: Finished "api" in ~1s
 [debug] [2020-01-23T02:08:15.696Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: IDLE
 [debug] [2020-01-23T02:08:15.697Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-23T20:44:09.691Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T20:44:09.693Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-23T20:44:09.693Z] CLI Version:   7.11.0
+[debug] [2020-01-23T20:44:09.694Z] Platform:      darwin
+[debug] [2020-01-23T20:44:09.694Z] Node Version:  v10.16.0
+[debug] [2020-01-23T20:44:09.719Z] Time:          Thu Jan 23 2020 14:44:09 GMT-0600 (Central Standard Time)
+[debug] [2020-01-23T20:44:09.719Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T20:44:09.719Z] 
+[debug] [2020-01-23T20:44:09.732Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-23T20:44:09.733Z] > authorizing via signed-in user
+[debug] [2020-01-23T20:44:09.733Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-23T20:44:09.734Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-23T20:44:09.734Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-23T20:44:10.007Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T20:44:10.024Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-23T20:44:10.230Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T20:44:10.232Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-23T20:44:10.576Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-23T20:44:10.894Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-23T20:44:10.894Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-23T20:44:10.894Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-23T20:44:10.895Z] [worker-~diagnostic~-dd7c1564-2731-42b4-80a8-2af1b18eac5e]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_26124.sock
+[debug] [2020-01-23T20:44:10.896Z] [worker-~diagnostic~-dd7c1564-2731-42b4-80a8-2af1b18eac5e]: BUSY
+[debug] [2020-01-23T20:44:11.208Z] [runtime-status] [26124] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T20:44:11.210Z] [runtime-status] [26124] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T20:44:11.215Z] [runtime-status] [26124] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T20:44:11.217Z] [runtime-status] [26124] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T20:44:11.218Z] [runtime-status] [26124] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-23T20:44:12.451Z] [worker-~diagnostic~-dd7c1564-2731-42b4-80a8-2af1b18eac5e]: IDLE
+[debug] [2020-01-23T20:44:41.001Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-23T20:44:41.001Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-23T20:44:41.001Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-23T20:44:41.005Z] [worker-pool] addWorker(api)
+[debug] [2020-01-23T20:44:41.005Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-23T20:44:41.005Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T20:44:41.005Z] [worker-api-280c5b17-fce5-4bd7-aee0-d2c2cdfd03f0]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_26145.sock
+[debug] [2020-01-23T20:44:41.005Z] [worker-api-280c5b17-fce5-4bd7-aee0-d2c2cdfd03f0]: BUSY
+[debug] [2020-01-23T20:44:41.829Z] [runtime-status] [26145] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T20:44:41.832Z] [runtime-status] [26145] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T20:44:41.835Z] [runtime-status] [26145] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T20:44:41.836Z] [runtime-status] [26145] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T20:44:41.838Z] [runtime-status] [26145] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T20:44:42.810Z] [runtime-status] [26145] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-23T20:44:42.811Z] [runtime-status] [26145] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-23T20:44:42.811Z] [runtime-status] [26145] Running api in mode HTTPS
+[debug] [2020-01-23T20:44:42.816Z] [runtime-status] [26145] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_26145.sock
+[debug] [2020-01-23T20:44:42.828Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-23T20:44:42.837Z] [runtime-status] [26145] Ephemeral server handling GET request
+[debug] [2020-01-23T20:44:43.287Z] [runtime-status] [26145] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-23T20:44:43.897Z] [worker-api-280c5b17-fce5-4bd7-aee0-d2c2cdfd03f0]: IDLE
+[debug] [2020-01-23T20:44:43.898Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-23T20:44:51.046Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-23T20:44:51.046Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-23T20:44:51.046Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-23T20:44:51.047Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T20:44:51.047Z] [worker-api-280c5b17-fce5-4bd7-aee0-d2c2cdfd03f0]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_26145.sock
+[debug] [2020-01-23T20:44:51.047Z] [worker-api-280c5b17-fce5-4bd7-aee0-d2c2cdfd03f0]: BUSY
+[debug] [2020-01-23T20:44:51.047Z] [runtime-status] [26145] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-23T20:44:51.048Z] [runtime-status] [26145] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-23T20:44:51.048Z] [runtime-status] [26145] Running api in mode HTTPS
+[debug] [2020-01-23T20:44:51.048Z] [runtime-status] [26145] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_26145.sock
+[debug] [2020-01-23T20:44:51.050Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-23T20:44:51.072Z] [runtime-status] [26145] Ephemeral server handling POST request
+[debug] [2020-01-23T20:44:51.074Z] [runtime-status] [26145] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-23T20:44:51.075Z] [worker-api-280c5b17-fce5-4bd7-aee0-d2c2cdfd03f0]: IDLE
+[debug] [2020-01-23T20:44:51.076Z] [work-queue] {"queueLength":0,"workRunningCount":0}
