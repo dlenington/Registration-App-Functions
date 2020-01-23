@@ -16,9 +16,7 @@ exports.validateSignupData = data => {
 
   if (isEmpty(data.email)) {
     errors.email = "Email must not be empty";
-  }
-
-  if (!isEmail(data.email)) {
+  } else if (!isEmail(data.email)) {
     errors.email = "Must be a valid email address";
   }
 
@@ -36,6 +34,6 @@ exports.validateSignupData = data => {
 
   return {
     errors,
-    valid: Object.keys(errors).length > 0 ? true : false
+    valid: Object.keys(errors).length === 0 ? true : false
   };
 };

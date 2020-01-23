@@ -2077,3 +2077,297 @@
 [debug] [2020-01-21T22:32:51.368Z] [runtime-status] [18750] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
 [debug] [2020-01-21T22:32:51.369Z] [runtime-status] [18750] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
 [debug] [2020-01-21T22:32:52.930Z] [worker-~diagnostic~-abc337cf-5236-455b-a74d-d298fe0e81cb]: IDLE
+[debug] [2020-01-21T22:34:32.587Z] File /Users/macbook/Registration/Registration-App-Functions/functions/index.js changed, reloading triggers
+[debug] [2020-01-21T22:34:33.592Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-21T22:34:33.592Z] [worker-~diagnostic~-abc337cf-5236-455b-a74d-d298fe0e81cb]: FINISHING
+[debug] [2020-01-21T22:34:33.592Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-21T22:34:33.592Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-21T22:34:33.595Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-21T22:34:33.595Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-21T22:34:33.595Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-21T22:34:33.596Z] [worker-~diagnostic~-b430d7a4-f303-4eb5-9253-a3e22ef0be40]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_18892.sock
+[debug] [2020-01-21T22:34:33.596Z] [worker-~diagnostic~-b430d7a4-f303-4eb5-9253-a3e22ef0be40]: BUSY
+[debug] [2020-01-21T22:34:33.599Z] [worker-~diagnostic~-abc337cf-5236-455b-a74d-d298fe0e81cb]: exited
+[debug] [2020-01-21T22:34:33.599Z] [worker-~diagnostic~-abc337cf-5236-455b-a74d-d298fe0e81cb]: FINISHED
+[debug] [2020-01-21T22:34:34.437Z] [runtime-status] [18892] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-21T22:34:34.439Z] [runtime-status] [18892] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-21T22:34:34.444Z] [runtime-status] [18892] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-21T22:34:34.446Z] [runtime-status] [18892] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-21T22:34:34.447Z] [runtime-status] [18892] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /Users/macbook/Registration/Registration-App-Functions/functions/index.js:38
+  if () return res.status(400).json(errors);
+      ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:721:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:718:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:4:58)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-21T22:34:34.636Z] [worker-~diagnostic~-b430d7a4-f303-4eb5-9253-a3e22ef0be40]: exited
+[debug] [2020-01-21T22:34:34.636Z] [worker-~diagnostic~-b430d7a4-f303-4eb5-9253-a3e22ef0be40]: FINISHED
+[debug] [2020-01-23T02:05:05.291Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T02:05:05.293Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-23T02:05:05.293Z] CLI Version:   7.11.0
+[debug] [2020-01-23T02:05:05.294Z] Platform:      darwin
+[debug] [2020-01-23T02:05:05.294Z] Node Version:  v10.16.0
+[debug] [2020-01-23T02:05:05.304Z] Time:          Wed Jan 22 2020 20:05:05 GMT-0600 (Central Standard Time)
+[debug] [2020-01-23T02:05:05.304Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T02:05:05.304Z] 
+[debug] [2020-01-23T02:05:05.321Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-23T02:05:05.321Z] > authorizing via signed-in user
+[debug] [2020-01-23T02:05:05.321Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-23T02:05:05.323Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-23T02:05:05.323Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-23T02:05:05.521Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T02:05:05.537Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-23T02:05:05.901Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T02:05:05.903Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-23T02:05:06.305Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-23T02:05:06.601Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-23T02:05:06.601Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-23T02:05:06.601Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-23T02:05:06.602Z] [worker-~diagnostic~-0cedcda4-e568-4566-8b66-1e4f49062540]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22856.sock
+[debug] [2020-01-23T02:05:06.604Z] [worker-~diagnostic~-0cedcda4-e568-4566-8b66-1e4f49062540]: BUSY
+[debug] [2020-01-23T02:05:06.879Z] [runtime-status] [22856] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T02:05:06.880Z] [runtime-status] [22856] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T02:05:06.885Z] [runtime-status] [22856] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T02:05:06.886Z] [runtime-status] [22856] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T02:05:06.887Z] [runtime-status] [22856] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Cannot find module '../util/validators'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:6:32)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-23T02:05:07.720Z] [worker-~diagnostic~-0cedcda4-e568-4566-8b66-1e4f49062540]: exited
+[debug] [2020-01-23T02:05:07.720Z] [worker-~diagnostic~-0cedcda4-e568-4566-8b66-1e4f49062540]: FINISHED
+[debug] [2020-01-23T02:06:06.526Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-23T02:06:06.526Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-23T02:06:06.527Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-01-23T02:06:06.527Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-01-23T02:06:06.530Z] [worker-pool] addWorker(api)
+[debug] [2020-01-23T02:06:06.530Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-23T02:06:06.530Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T02:06:06.530Z] [worker-api-77786668-8cff-4484-88ac-f0b827a27077]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22884.sock
+[debug] [2020-01-23T02:06:06.530Z] [worker-api-77786668-8cff-4484-88ac-f0b827a27077]: BUSY
+[debug] [2020-01-23T02:06:07.063Z] [runtime-status] [22884] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T02:06:07.065Z] [runtime-status] [22884] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T02:06:07.069Z] [runtime-status] [22884] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T02:06:07.072Z] [runtime-status] [22884] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T02:06:07.072Z] [runtime-status] [22884] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Cannot find module '../util/validators'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:6:32)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-23T02:06:07.726Z] [worker-api-77786668-8cff-4484-88ac-f0b827a27077]: exited
+[debug] [2020-01-23T02:06:07.726Z] [worker-api-77786668-8cff-4484-88ac-f0b827a27077]: FINISHED
+[debug] [2020-01-23T02:06:13.630Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-23T02:06:13.630Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-23T02:06:13.630Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-23T02:06:13.630Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-23T02:06:13.633Z] [worker-pool] addWorker(api)
+[debug] [2020-01-23T02:06:13.633Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-23T02:06:13.633Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T02:06:13.634Z] [worker-api-8f29e0b5-5b1d-4631-8320-0fb5552145c6]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22886.sock
+[debug] [2020-01-23T02:06:13.634Z] [worker-api-8f29e0b5-5b1d-4631-8320-0fb5552145c6]: BUSY
+[debug] [2020-01-23T02:06:13.911Z] [runtime-status] [22886] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T02:06:13.913Z] [runtime-status] [22886] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T02:06:13.915Z] [runtime-status] [22886] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T02:06:13.916Z] [runtime-status] [22886] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T02:06:13.916Z] [runtime-status] [22886] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Cannot find module '../util/validators'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:6:32)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-23T02:06:14.217Z] [worker-api-8f29e0b5-5b1d-4631-8320-0fb5552145c6]: exited
+[debug] [2020-01-23T02:06:14.217Z] [worker-api-8f29e0b5-5b1d-4631-8320-0fb5552145c6]: FINISHED
+[debug] [2020-01-23T02:06:25.351Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-23T02:06:25.352Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-23T02:06:25.352Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-23T02:06:25.352Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-23T02:06:25.357Z] [worker-pool] addWorker(api)
+[debug] [2020-01-23T02:06:25.357Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-23T02:06:25.357Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T02:06:25.357Z] [worker-api-b18124ea-ece1-417d-8463-deacfd18fe55]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22890.sock
+[debug] [2020-01-23T02:06:25.357Z] [worker-api-b18124ea-ece1-417d-8463-deacfd18fe55]: BUSY
+[debug] [2020-01-23T02:06:25.645Z] [runtime-status] [22890] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T02:06:25.648Z] [runtime-status] [22890] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T02:06:25.651Z] [runtime-status] [22890] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T02:06:25.652Z] [runtime-status] [22890] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T02:06:25.652Z] [runtime-status] [22890] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Cannot find module '../util/validators'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:6:32)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-01-23T02:06:25.965Z] [worker-api-b18124ea-ece1-417d-8463-deacfd18fe55]: exited
+[debug] [2020-01-23T02:06:25.965Z] [worker-api-b18124ea-ece1-417d-8463-deacfd18fe55]: FINISHED
+[debug] [2020-01-23T02:07:02.403Z] File /Users/macbook/Registration/Registration-App-Functions/functions/index.js changed, reloading triggers
+[debug] [2020-01-23T02:07:03.408Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-01-23T02:07:03.417Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-23T02:07:03.417Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-23T02:07:03.417Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-23T02:07:03.417Z] [worker-~diagnostic~-fff2b2fc-a17e-43fc-9a59-cea47ab4a528]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22892.sock
+[debug] [2020-01-23T02:07:03.417Z] [worker-~diagnostic~-fff2b2fc-a17e-43fc-9a59-cea47ab4a528]: BUSY
+[debug] [2020-01-23T02:07:03.950Z] [runtime-status] [22892] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T02:07:03.953Z] [runtime-status] [22892] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T02:07:03.955Z] [runtime-status] [22892] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T02:07:03.957Z] [runtime-status] [22892] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T02:07:03.958Z] [runtime-status] [22892] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-23T02:07:04.952Z] [worker-~diagnostic~-fff2b2fc-a17e-43fc-9a59-cea47ab4a528]: IDLE
+[debug] [2020-01-23T02:07:19.060Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T02:07:19.063Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-23T02:07:19.063Z] CLI Version:   7.11.0
+[debug] [2020-01-23T02:07:19.063Z] Platform:      darwin
+[debug] [2020-01-23T02:07:19.063Z] Node Version:  v10.16.0
+[debug] [2020-01-23T02:07:19.064Z] Time:          Wed Jan 22 2020 20:07:19 GMT-0600 (Central Standard Time)
+[debug] [2020-01-23T02:07:19.064Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T02:07:19.064Z] 
+[debug] [2020-01-23T02:07:19.075Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-23T02:07:19.076Z] > authorizing via signed-in user
+[debug] [2020-01-23T02:07:19.076Z] [iam] checking project bendan-app for permissions ["firebase.projects.get"]
+[debug] [2020-01-23T02:07:19.077Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bendan-app:testIamPermissions  
+
+[debug] [2020-01-23T02:07:19.271Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T02:07:19.272Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bendan-app  
+ 
+[debug] [2020-01-23T02:07:19.461Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/macbook/Registration/Registration-App-Functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-01-23T02:07:19.747Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-23T02:07:19.747Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-23T02:07:19.747Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-23T02:07:19.748Z] [worker-~diagnostic~-3fc2a106-dece-49bd-9163-a09e9dab6ff8]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22910.sock
+[debug] [2020-01-23T02:07:19.748Z] [worker-~diagnostic~-3fc2a106-dece-49bd-9163-a09e9dab6ff8]: BUSY
+[debug] [2020-01-23T02:07:20.016Z] [runtime-status] [22910] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T02:07:20.017Z] [runtime-status] [22910] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T02:07:20.019Z] [runtime-status] [22910] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T02:07:20.020Z] [runtime-status] [22910] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T02:07:20.021Z] [runtime-status] [22910] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/bendan-app/us-central1/api).
+[debug] [2020-01-23T02:07:20.370Z] [worker-~diagnostic~-3fc2a106-dece-49bd-9163-a09e9dab6ff8]: IDLE
+[debug] [2020-01-23T02:07:27.350Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-23T02:07:27.350Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-23T02:07:27.350Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-23T02:07:27.353Z] [worker-pool] addWorker(api)
+[debug] [2020-01-23T02:07:27.353Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-23T02:07:27.353Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T02:07:27.353Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22911.sock
+[debug] [2020-01-23T02:07:27.353Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: BUSY
+[debug] [2020-01-23T02:07:27.637Z] [runtime-status] [22911] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-01-23T02:07:27.639Z] [runtime-status] [22911] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T02:07:27.642Z] [runtime-status] [22911] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-23T02:07:27.643Z] [runtime-status] [22911] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T02:07:27.644Z] [runtime-status] [22911] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-23T02:07:28.013Z] [runtime-status] [22911] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-23T02:07:28.014Z] [runtime-status] [22911] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-23T02:07:28.014Z] [runtime-status] [22911] Running api in mode HTTPS
+[debug] [2020-01-23T02:07:28.018Z] [runtime-status] [22911] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22911.sock
+[debug] [2020-01-23T02:07:28.024Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-23T02:07:28.061Z] [runtime-status] [22911] Ephemeral server handling POST request
+[debug] [2020-01-23T02:07:28.069Z] [runtime-status] [22911] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-23T02:07:28.070Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: IDLE
+[debug] [2020-01-23T02:07:28.070Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-23T02:07:36.194Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-23T02:07:36.195Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-23T02:07:36.195Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-23T02:07:36.195Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T02:07:36.195Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22911.sock
+[debug] [2020-01-23T02:07:36.195Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: BUSY
+[debug] [2020-01-23T02:07:36.198Z] [runtime-status] [22911] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-23T02:07:36.198Z] [runtime-status] [22911] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-23T02:07:36.198Z] [runtime-status] [22911] Running api in mode HTTPS
+[debug] [2020-01-23T02:07:36.198Z] [runtime-status] [22911] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22911.sock
+[debug] [2020-01-23T02:07:36.200Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-23T02:07:36.208Z] [runtime-status] [22911] Ephemeral server handling POST request
+[debug] [2020-01-23T02:07:36.210Z] [runtime-status] [22911] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-23T02:07:36.210Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: IDLE
+[debug] [2020-01-23T02:07:36.211Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-23T02:07:41.993Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-23T02:07:41.994Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-23T02:07:41.994Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-23T02:07:41.994Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T02:07:41.994Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22911.sock
+[debug] [2020-01-23T02:07:41.994Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: BUSY
+[debug] [2020-01-23T02:07:41.995Z] [runtime-status] [22911] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-23T02:07:41.995Z] [runtime-status] [22911] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-23T02:07:41.995Z] [runtime-status] [22911] Running api in mode HTTPS
+[debug] [2020-01-23T02:07:41.996Z] [runtime-status] [22911] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22911.sock
+[debug] [2020-01-23T02:07:41.997Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-23T02:07:42.000Z] [runtime-status] [22911] Ephemeral server handling POST request
+[debug] [2020-01-23T02:07:42.002Z] [runtime-status] [22911] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-23T02:07:42.003Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: IDLE
+[debug] [2020-01-23T02:07:42.003Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-23T02:08:15.688Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-23T02:08:15.688Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-23T02:08:15.688Z] Accepted request POST /bendan-app/us-central1/api/signup --> api
+[debug] [2020-01-23T02:08:15.688Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-23T02:08:15.688Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22911.sock
+[debug] [2020-01-23T02:08:15.688Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: BUSY
+[debug] [2020-01-23T02:08:15.689Z] [runtime-status] [22911] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-23T02:08:15.689Z] [runtime-status] [22911] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-23T02:08:15.689Z] [runtime-status] [22911] Running api in mode HTTPS
+[debug] [2020-01-23T02:08:15.689Z] [runtime-status] [22911] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_22911.sock
+[debug] [2020-01-23T02:08:15.691Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-23T02:08:15.695Z] [runtime-status] [22911] Ephemeral server handling POST request
+[debug] [2020-01-23T02:08:15.696Z] [runtime-status] [22911] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-23T02:08:15.696Z] [worker-api-757a97e2-b30c-40c3-8e6f-b6fe24dda9ac]: IDLE
+[debug] [2020-01-23T02:08:15.697Z] [work-queue] {"queueLength":0,"workRunningCount":0}

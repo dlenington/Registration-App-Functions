@@ -3,6 +3,7 @@ const admin = require("firebase-admin");
 const serviceAccount = require("./service-account.json");
 const app = require("express")();
 const firebase = require("firebase");
+const { validateSignupData } = require("./util/validators");
 
 const config = {
   apiKey: "AIzaSyAcDm2JSuv6wO4YGcG3gI3Aqyi1Tp2NLrQ",
@@ -23,19 +24,6 @@ admin.initializeApp({
 const db = admin.firestore();
 exports.api = functions.https.onRequest(app);
 
-const isEmpty = string => {
-  if (string.trim === "") return true;
-  else return false;
-};
-
-const isEmail = email => {
-  const regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (email.match(regEx)) return true;
-  else {
-    return false;
-  }
-};
-
 app.post("/signup", (req, res) => {
   const newUser = {
     email: req.body.email,
@@ -44,29 +32,9 @@ app.post("/signup", (req, res) => {
     handle: req.body.handle
   };
 
-  let errors = {};
+  const { valid, errors } = validateSignupData(newUser);
 
-  if (isEmpty(newUser.email)) {
-    errors.email = "Email must not be empty";
-  }
-
-  if (!isEmail(newUser.email)) {
-    errors.email = "Must be a valid email address";
-  }
-
-  if (isEmpty(newUser.password)) {
-    errors.password = "Must not be empty";
-  }
-
-  if (newUser.password !== newUser.confirmPassword) {
-    errors.confirmPassword = "Passwords must match";
-  }
-
-  if (isEmpty(newUser.handle)) {
-    errors.handle = "Must not be empty";
-  }
-
-  if (Object.keys(errors).length > 0) return res.status(400).json(errors);
+  if (!valid) return res.status(400).json(errors);
 
   let token, userId;
   db.doc(`/users/${newUser.handle}`)
