@@ -149,3 +149,9 @@ app.post("/login", (req, res) => {
       }
     });
 });
+
+exports.get("/user", (req, res) => {
+  db.collection("users")
+    .get()
+    .then();
+});
