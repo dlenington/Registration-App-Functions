@@ -150,28 +150,16 @@ app.post("/login", (req, res) => {
     });
 });
 
-app.get("/user", (req, res) => {
+app.get("/user/:handle", (req, res) => {
   let userData = {};
   db.doc(`/users/${req.params.handle}`)
     .get()
     .then(doc => {
       if (doc.exists) {
-        userData.user = doc.data();
-        return db
-          .collection("posts")
-          .where("userHandle", "==", req.params.handle)
-          .orderBy("createdAt", "desc")
-          .get();
+        userData.credentials = doc.data();
+        return res.json(userData);
       } else {
         return res.status(404).json({ error: "User not found" });
       }
-    })
-    .then(data => {
-      userData.posts = [];
-      data.forEach(doc => {
-        userData.posts.push({
-          body: doc.data().body
-        });
-      });
     });
 });
