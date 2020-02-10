@@ -3,7 +3,7 @@ const admin = require("firebase-admin");
 const serviceAccount = require("./service-account.json");
 const app = require("express")();
 const firebase = require("firebase");
-const { validateSignupData } = require("./util/validators");
+const { validateSignupData, validateLoginData } = require("./util/validators");
 
 const config = {
   apiKey: "AIzaSyAcDm2JSuv6wO4YGcG3gI3Aqyi1Tp2NLrQ",
@@ -122,12 +122,9 @@ app.post("/login", (req, res) => {
     password: req.body.password
   };
 
-  let errors = {};
+  const { valid, errors } = validateLoginData(user);
 
-  if (isEmpty(user.email)) errors.email = "Must not be empty";
-  if (isEmpty(user.password)) errors.password = "Must not be empty";
-
-  if (Object.keys(errors).length > 0) return res.status(400).json(errors);
+  if (!valid) return res.status(400).json(errors);
 
   firebase
     .auth()
