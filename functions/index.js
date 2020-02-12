@@ -1,9 +1,8 @@
 const functions = require("firebase-functions");
-const admin = require("firebase-admin");
-const serviceAccount = require("./service-account.json");
 const app = require("express")();
 const firebase = require("firebase");
 const { validateSignupData, validateLoginData } = require("./util/validators");
+const { db } = require("./util/admin");
 
 const config = {
   apiKey: "AIzaSyAcDm2JSuv6wO4YGcG3gI3Aqyi1Tp2NLrQ",
@@ -17,11 +16,7 @@ const config = {
 };
 
 firebase.initializeApp(config);
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://bendan-app.firebaseio.com"
-});
-const db = admin.firestore();
+
 exports.api = functions.https.onRequest(app);
 
 app.post("/signup", (req, res) => {
