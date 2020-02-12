@@ -147,8 +147,9 @@ app.post("/login", (req, res) => {
     });
 });
 
-app.get("/user/:handle", (req, res) => {
+app.get("/user", (req, res) => {
   let userData = {};
+  console.log(res.params);
   db.doc(`/users/${req.params.handle}`)
     .get()
     .then(doc => {
