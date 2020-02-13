@@ -1,6 +1,7 @@
 const functions = require("firebase-functions");
 const app = require("express")();
 const firebase = require("firebase");
+const FBAuth = require("./util/fbAuth");
 const { validateSignupData, validateLoginData } = require("./util/validators");
 const { db } = require("./util/admin");
 
@@ -142,9 +143,8 @@ app.post("/login", (req, res) => {
     });
 });
 
-app.get("/user", (req, res) => {
+app.get("/user", FBAuth, (req, res) => {
   let userData = {};
-  console.log(res.params);
   db.doc(`/users/${req.params.handle}`)
     .get()
     .then(doc => {
