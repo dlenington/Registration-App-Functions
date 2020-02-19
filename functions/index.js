@@ -146,6 +146,7 @@ app.post("/login", (req, res) => {
 app.get("/user", FBAuth, (req, res) => {
   let userData = {};
   console.log(req.params.handle);
+  console.log("Logs visible");
   db.doc(`/users/${req.params.handle}`)
     .get()
     .then(doc => {
