@@ -211,3 +211,454 @@
 [debug] [2020-02-19T23:03:13.860Z] [runtime-status] [77968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
 [debug] [2020-02-19T23:03:13.861Z] [runtime-status] [77968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
 [debug] [2020-02-19T23:03:15.044Z] [worker-~diagnostic~-34e2e80f-ecf3-44f0-af38-2646bfb41aff]: IDLE
+[debug] [2020-02-20T21:22:36.419Z] ----------------------------------------------------------------------
+[debug] [2020-02-20T21:22:36.421Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2020-02-20T21:22:36.422Z] CLI Version:   7.11.0
+[debug] [2020-02-20T21:22:36.422Z] Platform:      darwin
+[debug] [2020-02-20T21:22:36.422Z] Node Version:  v10.16.0
+[debug] [2020-02-20T21:22:36.436Z] Time:          Thu Feb 20 2020 15:22:36 GMT-0600 (Central Standard Time)
+[debug] [2020-02-20T21:22:36.437Z] ----------------------------------------------------------------------
+[debug] [2020-02-20T21:22:36.437Z] 
+[debug] [2020-02-20T21:22:36.453Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-20T21:22:36.454Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/macbook/Registration/Registration-App-Functions/functions" for Cloud Functions...
+[debug] [2020-02-20T21:22:36.772Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-20T21:22:36.772Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-20T21:22:36.772Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-20T21:22:36.773Z] [worker-~diagnostic~-f46f5aff-7aa5-4d28-8553-2d9d831df310]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88146.sock
+[debug] [2020-02-20T21:22:36.773Z] [worker-~diagnostic~-f46f5aff-7aa5-4d28-8553-2d9d831df310]: BUSY
+[debug] [2020-02-20T21:22:37.043Z] [runtime-status] [88146] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:22:37.045Z] [runtime-status] [88146] Disabled runtime features: undefined
+[debug] [2020-02-20T21:22:37.048Z] [runtime-status] [88146] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:22:37.051Z] [runtime-status] [88146] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:22:37.559Z] [runtime-status] [88146] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:22:37.560Z] [runtime-status] [88146] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:22:37.649Z] [runtime-status] [88146] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:22:37.650Z] [runtime-status] [88146] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:22:37.651Z] [runtime-status] [88146] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:22:37.652Z] [runtime-status] [88146] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:22:37.788Z] [runtime-status] [88146] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-02-20T21:22:38.454Z] [runtime-status] [88146] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[info] ✔  functions[api]: http function initialized (http://localhost:5001/bendan-app/us-central1/api).
+[info] ✔  All emulators started, it is now safe to connect.
+[debug] [2020-02-20T21:22:38.464Z] [worker-~diagnostic~-f46f5aff-7aa5-4d28-8553-2d9d831df310]: IDLE
+[debug] [2020-02-20T21:24:06.287Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:24:06.288Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:24:06.289Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-02-20T21:24:06.298Z] [worker-pool] addWorker(api)
+[debug] [2020-02-20T21:24:06.298Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-02-20T21:24:06.298Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:24:06.299Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88217.sock
+[debug] [2020-02-20T21:24:06.299Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: BUSY
+[debug] [2020-02-20T21:24:06.301Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-20T21:24:06.301Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-20T21:24:06.301Z] Accepted request GET /bendan-app/us-central1/api/user --> api
+[debug] [2020-02-20T21:24:06.306Z] [worker-pool] addWorker(api)
+[debug] [2020-02-20T21:24:06.306Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-02-20T21:24:06.306Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:24:06.306Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88218.sock
+[debug] [2020-02-20T21:24:06.306Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: BUSY
+[debug] [2020-02-20T21:24:07.096Z] [runtime-status] [88217] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:24:07.097Z] [runtime-status] [88218] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:24:07.099Z] [runtime-status] [88218] Disabled runtime features: undefined
+[debug] [2020-02-20T21:24:07.105Z] [runtime-status] [88218] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:24:07.107Z] [runtime-status] [88218] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:24:07.107Z] [runtime-status] [88217] Disabled runtime features: undefined
+[debug] [2020-02-20T21:24:07.110Z] [runtime-status] [88217] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:24:07.112Z] [runtime-status] [88217] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:24:07.630Z] [runtime-status] [88218] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:24:07.631Z] [runtime-status] [88217] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:24:07.631Z] [runtime-status] [88217] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:24:07.631Z] [runtime-status] [88218] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:24:07.726Z] [runtime-status] [88218] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:24:07.726Z] [runtime-status] [88217] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:24:07.727Z] [runtime-status] [88217] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:24:07.727Z] [runtime-status] [88218] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:24:07.727Z] [runtime-status] [88217] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:24:07.728Z] [runtime-status] [88218] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:24:07.728Z] [runtime-status] [88217] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:24:07.728Z] [runtime-status] [88218] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:24:07.869Z] [runtime-status] [88218] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-02-20T21:24:07.869Z] [runtime-status] [88217] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-02-20T21:24:08.492Z] [runtime-status] [88217] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-02-20T21:24:08.492Z] [runtime-status] [88218] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-02-20T21:24:08.501Z] [runtime-status] [88218] Trigger "api" has been found, beginning invocation!
+[debug] [2020-02-20T21:24:08.501Z] [runtime-status] [88217] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:24:08.502Z] [runtime-status] [88218] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:24:08.502Z] [runtime-status] [88218] Running api in mode HTTPS
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:24:08.502Z] [runtime-status] [88217] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:24:08.502Z] [runtime-status] [88217] Running api in mode HTTPS
+[debug] [2020-02-20T21:24:08.508Z] [runtime-status] [88218] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88218.sock
+[debug] [2020-02-20T21:24:08.508Z] [runtime-status] [88217] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88217.sock
+[debug] [2020-02-20T21:24:08.513Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:24:08.521Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:24:08.529Z] [runtime-status] [88218] Ephemeral server handling GET request
+[info] >  No token found
+[debug] [2020-02-20T21:24:08.533Z] [runtime-status] [88217] Ephemeral server handling GET request
+[debug] [2020-02-20T21:24:08.541Z] [runtime-status] [88218] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:24:08.551Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: IDLE
+[debug] [2020-02-20T21:24:08.551Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:24:08.802Z] [runtime-status] [88217] Ephemeral server survived.
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:24:09.326Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: IDLE
+[debug] [2020-02-20T21:24:09.326Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T21:24:39.481Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:24:39.481Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:24:39.481Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-02-20T21:24:39.481Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:24:39.482Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88217.sock
+[debug] [2020-02-20T21:24:39.482Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: BUSY
+[debug] [2020-02-20T21:24:39.482Z] [runtime-status] [88217] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:24:39.483Z] [runtime-status] [88217] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:24:39.483Z] [runtime-status] [88217] Running api in mode HTTPS
+[debug] [2020-02-20T21:24:39.483Z] [runtime-status] [88217] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88217.sock
+[debug] [2020-02-20T21:24:39.484Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:24:39.502Z] [runtime-status] [88217] Ephemeral server handling POST request
+[debug] [2020-02-20T21:24:39.515Z] [runtime-status] [88217] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:24:40.111Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: IDLE
+[debug] [2020-02-20T21:24:40.111Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T21:24:40.195Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:24:40.196Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:24:40.196Z] Accepted request GET /bendan-app/us-central1/api/user --> api
+[debug] [2020-02-20T21:24:40.196Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:24:40.197Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88217.sock
+[debug] [2020-02-20T21:24:40.197Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: BUSY
+[debug] [2020-02-20T21:24:40.198Z] [runtime-status] [88217] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:24:40.199Z] [runtime-status] [88217] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:24:40.199Z] [runtime-status] [88217] Running api in mode HTTPS
+[debug] [2020-02-20T21:24:40.201Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-20T21:24:40.202Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-20T21:24:40.202Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-02-20T21:24:40.202Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:24:40.202Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88218.sock
+[debug] [2020-02-20T21:24:40.202Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: BUSY
+[debug] [2020-02-20T21:24:40.202Z] [runtime-status] [88217] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88217.sock
+[debug] [2020-02-20T21:24:40.203Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:24:40.205Z] [runtime-status] [88218] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:24:40.206Z] [runtime-status] [88218] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:24:40.206Z] [runtime-status] [88218] Running api in mode HTTPS
+[debug] [2020-02-20T21:24:40.206Z] [runtime-status] [88218] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88218.sock
+[debug] [2020-02-20T21:24:40.211Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:24:40.215Z] [runtime-status] [88217] Ephemeral server handling GET request
+[debug] [2020-02-20T21:24:40.217Z] [runtime-status] [88218] Ephemeral server handling GET request
+[debug] [2020-02-20T21:24:40.273Z] [runtime-status] [88217] Ephemeral server survived.
+[debug] [2020-02-20T21:24:40.432Z] [runtime-status] [88218] Ephemeral server survived.
+[info] >  undefined
+[info] >  Logs visible
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:24:40.548Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: IDLE
+[debug] [2020-02-20T21:24:40.548Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:24:41.047Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: IDLE
+[debug] [2020-02-20T21:24:41.047Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T21:26:09.212Z] File /Users/macbook/Registration/Registration-App-Functions/functions/index.js changed, reloading triggers
+[debug] [2020-02-20T21:26:10.217Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-20T21:26:10.218Z] [worker-~diagnostic~-f46f5aff-7aa5-4d28-8553-2d9d831df310]: FINISHING
+[debug] [2020-02-20T21:26:10.218Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-20T21:26:10.218Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: FINISHING
+[debug] [2020-02-20T21:26:10.218Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-20T21:26:10.219Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: FINISHING
+[debug] [2020-02-20T21:26:10.226Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-20T21:26:10.226Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-20T21:26:10.226Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-20T21:26:10.227Z] [worker-~diagnostic~-a819eb44-ac1b-4e3f-b16a-9447c5ccb75d]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88266.sock
+[debug] [2020-02-20T21:26:10.227Z] [worker-~diagnostic~-a819eb44-ac1b-4e3f-b16a-9447c5ccb75d]: BUSY
+[debug] [2020-02-20T21:26:10.233Z] [worker-~diagnostic~-f46f5aff-7aa5-4d28-8553-2d9d831df310]: exited
+[debug] [2020-02-20T21:26:10.233Z] [worker-~diagnostic~-f46f5aff-7aa5-4d28-8553-2d9d831df310]: FINISHED
+[debug] [2020-02-20T21:26:10.233Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: exited
+[debug] [2020-02-20T21:26:10.233Z] [worker-api-049e94b3-b0a8-42ba-8c53-ebfeade7866d]: FINISHED
+[debug] [2020-02-20T21:26:10.234Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: exited
+[debug] [2020-02-20T21:26:10.234Z] [worker-api-a4d0e54c-ba57-40e7-82e5-f9f1e18ebe47]: FINISHED
+[debug] [2020-02-20T21:26:10.756Z] [runtime-status] [88266] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:26:10.759Z] [runtime-status] [88266] Disabled runtime features: undefined
+[debug] [2020-02-20T21:26:10.761Z] [runtime-status] [88266] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:26:10.763Z] [runtime-status] [88266] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:26:11.216Z] [runtime-status] [88266] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:26:11.216Z] [runtime-status] [88266] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:26:11.285Z] [runtime-status] [88266] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:26:11.286Z] [runtime-status] [88266] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:26:11.287Z] [runtime-status] [88266] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:26:11.287Z] [runtime-status] [88266] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:26:11.394Z] [runtime-status] [88266] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-02-20T21:26:12.016Z] [runtime-status] [88266] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-02-20T21:26:12.025Z] [worker-~diagnostic~-a819eb44-ac1b-4e3f-b16a-9447c5ccb75d]: IDLE
+[debug] [2020-02-20T21:26:26.171Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:26:26.171Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:26:26.171Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-02-20T21:26:26.171Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-20T21:26:26.171Z] [worker-pool] Cleaned up workers for api: 2 --> 0
+[debug] [2020-02-20T21:26:26.175Z] [worker-pool] addWorker(api)
+[debug] [2020-02-20T21:26:26.175Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-02-20T21:26:26.175Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:26:26.175Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88280.sock
+[debug] [2020-02-20T21:26:26.175Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: BUSY
+[debug] [2020-02-20T21:26:26.479Z] [runtime-status] [88280] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:26:26.481Z] [runtime-status] [88280] Disabled runtime features: undefined
+[debug] [2020-02-20T21:26:26.483Z] [runtime-status] [88280] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:26:26.484Z] [runtime-status] [88280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:26:26.653Z] [runtime-status] [88280] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:26:26.653Z] [runtime-status] [88280] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:26:26.698Z] [runtime-status] [88280] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:26:26.699Z] [runtime-status] [88280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:26:26.701Z] [runtime-status] [88280] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:26:26.705Z] [runtime-status] [88280] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:26:26.747Z] [runtime-status] [88280] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-02-20T21:26:27.045Z] [runtime-status] [88280] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-02-20T21:26:27.054Z] [runtime-status] [88280] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:26:27.054Z] [runtime-status] [88280] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:26:27.054Z] [runtime-status] [88280] Running api in mode HTTPS
+[debug] [2020-02-20T21:26:27.059Z] [runtime-status] [88280] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88280.sock
+[debug] [2020-02-20T21:26:27.063Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:26:27.099Z] [runtime-status] [88280] Ephemeral server handling POST request
+[debug] [2020-02-20T21:26:27.134Z] [runtime-status] [88280] Ephemeral server survived.
+[info] >  { [Error: There is no user record corresponding to this identifier. The user may have been deleted.]
+[info] >    code: 'auth/user-not-found',
+[info] >    message:
+[info] >     'There is no user record corresponding to this identifier. The user may have been deleted.' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:26:27.364Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: IDLE
+[debug] [2020-02-20T21:26:27.364Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T21:26:34.467Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:26:34.467Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:26:34.467Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-02-20T21:26:34.467Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:26:34.467Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88280.sock
+[debug] [2020-02-20T21:26:34.467Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: BUSY
+[debug] [2020-02-20T21:26:34.468Z] [runtime-status] [88280] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:26:34.469Z] [runtime-status] [88280] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:26:34.469Z] [runtime-status] [88280] Running api in mode HTTPS
+[debug] [2020-02-20T21:26:34.469Z] [runtime-status] [88280] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88280.sock
+[debug] [2020-02-20T21:26:34.471Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:26:34.474Z] [runtime-status] [88280] Ephemeral server handling POST request
+[debug] [2020-02-20T21:26:34.478Z] [runtime-status] [88280] Ephemeral server survived.
+[info] >  { [Error: There is no user record corresponding to this identifier. The user may have been deleted.]
+[info] >    code: 'auth/user-not-found',
+[info] >    message:
+[info] >     'There is no user record corresponding to this identifier. The user may have been deleted.' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:26:34.698Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: IDLE
+[debug] [2020-02-20T21:26:34.698Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T21:26:44.352Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:26:44.352Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:26:44.352Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-02-20T21:26:44.352Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:26:44.352Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88280.sock
+[debug] [2020-02-20T21:26:44.353Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: BUSY
+[debug] [2020-02-20T21:26:44.354Z] [runtime-status] [88280] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:26:44.354Z] [runtime-status] [88280] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:26:44.354Z] [runtime-status] [88280] Running api in mode HTTPS
+[debug] [2020-02-20T21:26:44.355Z] [runtime-status] [88280] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88280.sock
+[debug] [2020-02-20T21:26:44.356Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:26:44.362Z] [runtime-status] [88280] Ephemeral server handling POST request
+[debug] [2020-02-20T21:26:44.366Z] [runtime-status] [88280] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:26:44.935Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: IDLE
+[debug] [2020-02-20T21:26:44.936Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T21:26:44.990Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:26:44.990Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:26:44.990Z] Accepted request GET /bendan-app/us-central1/api/user --> api
+[debug] [2020-02-20T21:26:44.991Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:26:44.991Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88280.sock
+[debug] [2020-02-20T21:26:44.991Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: BUSY
+[debug] [2020-02-20T21:26:44.995Z] [runtime-status] [88280] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:26:44.995Z] [runtime-status] [88280] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:26:44.995Z] [runtime-status] [88280] Running api in mode HTTPS
+[debug] [2020-02-20T21:26:44.996Z] [runtime-status] [88280] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88280.sock
+[debug] [2020-02-20T21:26:44.996Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:26:45.002Z] [runtime-status] [88280] Ephemeral server handling GET request
+[debug] [2020-02-20T21:26:45.006Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-20T21:26:45.006Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-20T21:26:45.006Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-02-20T21:26:45.021Z] [worker-pool] addWorker(api)
+[debug] [2020-02-20T21:26:45.021Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-02-20T21:26:45.021Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:26:45.021Z] [worker-api-38653d00-3302-4b76-aba4-8f312527b084]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88286.sock
+[debug] [2020-02-20T21:26:45.021Z] [worker-api-38653d00-3302-4b76-aba4-8f312527b084]: BUSY
+[debug] [2020-02-20T21:26:45.093Z] [runtime-status] [88280] Ephemeral server survived.
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[debug] [2020-02-20T21:26:45.540Z] [runtime-status] [88286] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:26:45.542Z] [runtime-status] [88286] Disabled runtime features: undefined
+[debug] [2020-02-20T21:26:45.545Z] [runtime-status] [88286] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:26:45.546Z] [runtime-status] [88286] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:26:45.763Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: IDLE
+[debug] [2020-02-20T21:26:45.763Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  TypeError: Cannot read property 'handle' of undefined
+[info] >      at app.get (/Users/macbook/Registration/Registration-App-Functions/functions/index.js:148:31)
+[info] >      at Layer.handle [as handle_request] (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >      at admin.auth.verifyIdToken.then.then.data (/Users/macbook/Registration/Registration-App-Functions/functions/util/fbAuth.js:29:14)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[debug] [2020-02-20T21:26:46.004Z] [runtime-status] [88286] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:26:46.004Z] [runtime-status] [88286] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:26:46.116Z] [runtime-status] [88286] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:26:46.119Z] [runtime-status] [88286] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:26:46.119Z] [runtime-status] [88286] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:26:46.119Z] [runtime-status] [88286] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:26:46.248Z] [runtime-status] [88286] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-02-20T21:26:46.976Z] [runtime-status] [88286] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-02-20T21:26:46.986Z] [runtime-status] [88286] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:26:46.986Z] [runtime-status] [88286] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:26:46.986Z] [runtime-status] [88286] Running api in mode HTTPS
+[debug] [2020-02-20T21:26:46.990Z] [runtime-status] [88286] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88286.sock
+[debug] [2020-02-20T21:26:46.993Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:26:47.004Z] [runtime-status] [88286] Ephemeral server handling GET request
+[debug] [2020-02-20T21:26:47.134Z] [runtime-status] [88286] Ephemeral server survived.
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:26:47.645Z] [worker-api-38653d00-3302-4b76-aba4-8f312527b084]: IDLE
+[debug] [2020-02-20T21:26:47.645Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T21:30:15.760Z] File /Users/macbook/Registration/Registration-App-Functions/functions/index.js changed, reloading triggers
+[debug] [2020-02-20T21:30:16.761Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-20T21:30:16.761Z] [worker-~diagnostic~-a819eb44-ac1b-4e3f-b16a-9447c5ccb75d]: FINISHING
+[debug] [2020-02-20T21:30:16.762Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-20T21:30:16.762Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: FINISHING
+[debug] [2020-02-20T21:30:16.762Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-02-20T21:30:16.762Z] [worker-api-38653d00-3302-4b76-aba4-8f312527b084]: FINISHING
+[debug] [2020-02-20T21:30:16.772Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-20T21:30:16.772Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-20T21:30:16.772Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-20T21:30:16.773Z] [worker-~diagnostic~-0b61d8c1-7505-484d-938f-442a37923b26]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88363.sock
+[debug] [2020-02-20T21:30:16.773Z] [worker-~diagnostic~-0b61d8c1-7505-484d-938f-442a37923b26]: BUSY
+[debug] [2020-02-20T21:30:16.777Z] [worker-~diagnostic~-a819eb44-ac1b-4e3f-b16a-9447c5ccb75d]: exited
+[debug] [2020-02-20T21:30:16.777Z] [worker-~diagnostic~-a819eb44-ac1b-4e3f-b16a-9447c5ccb75d]: FINISHED
+[debug] [2020-02-20T21:30:16.780Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: exited
+[debug] [2020-02-20T21:30:16.780Z] [worker-api-bc123fef-cd1d-4f77-85db-6c599bb4114b]: FINISHED
+[debug] [2020-02-20T21:30:16.780Z] [worker-api-38653d00-3302-4b76-aba4-8f312527b084]: exited
+[debug] [2020-02-20T21:30:16.780Z] [worker-api-38653d00-3302-4b76-aba4-8f312527b084]: FINISHED
+[debug] [2020-02-20T21:30:17.346Z] [runtime-status] [88363] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:30:17.348Z] [runtime-status] [88363] Disabled runtime features: undefined
+[debug] [2020-02-20T21:30:17.352Z] [runtime-status] [88363] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:30:17.354Z] [runtime-status] [88363] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:30:17.842Z] [runtime-status] [88363] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:30:17.843Z] [runtime-status] [88363] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:30:17.934Z] [runtime-status] [88363] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:30:17.935Z] [runtime-status] [88363] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:30:17.936Z] [runtime-status] [88363] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:30:17.937Z] [runtime-status] [88363] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:30:18.039Z] [runtime-status] [88363] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-02-20T21:30:18.677Z] [runtime-status] [88363] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-02-20T21:30:18.686Z] [worker-~diagnostic~-0b61d8c1-7505-484d-938f-442a37923b26]: IDLE
+[debug] [2020-02-20T21:30:35.667Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:30:35.668Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:30:35.668Z] Accepted request POST /bendan-app/us-central1/api/login --> api
+[debug] [2020-02-20T21:30:35.668Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-20T21:30:35.668Z] [worker-pool] Cleaned up workers for api: 2 --> 0
+[debug] [2020-02-20T21:30:35.672Z] [worker-pool] addWorker(api)
+[debug] [2020-02-20T21:30:35.672Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-02-20T21:30:35.672Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:30:35.673Z] [worker-api-98055e35-a4aa-40d5-8cfb-da56f5fb1a79]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88376.sock
+[debug] [2020-02-20T21:30:35.673Z] [worker-api-98055e35-a4aa-40d5-8cfb-da56f5fb1a79]: BUSY
+[debug] [2020-02-20T21:30:35.969Z] [runtime-status] [88376] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:30:35.971Z] [runtime-status] [88376] Disabled runtime features: undefined
+[debug] [2020-02-20T21:30:35.974Z] [runtime-status] [88376] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:30:35.975Z] [runtime-status] [88376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:30:36.132Z] [runtime-status] [88376] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:30:36.133Z] [runtime-status] [88376] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:30:36.169Z] [runtime-status] [88376] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:30:36.169Z] [runtime-status] [88376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:30:36.170Z] [runtime-status] [88376] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:30:36.170Z] [runtime-status] [88376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:30:36.205Z] [runtime-status] [88376] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-02-20T21:30:36.438Z] [runtime-status] [88376] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-02-20T21:30:36.444Z] [runtime-status] [88376] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:30:36.445Z] [runtime-status] [88376] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:30:36.445Z] [runtime-status] [88376] Running api in mode HTTPS
+[debug] [2020-02-20T21:30:36.448Z] [runtime-status] [88376] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88376.sock
+[debug] [2020-02-20T21:30:36.451Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:30:36.477Z] [runtime-status] [88376] Ephemeral server handling POST request
+[debug] [2020-02-20T21:30:36.502Z] [runtime-status] [88376] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:30:37.075Z] [worker-api-98055e35-a4aa-40d5-8cfb-da56f5fb1a79]: IDLE
+[debug] [2020-02-20T21:30:37.075Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T21:30:37.126Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T21:30:37.127Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:30:37.127Z] Accepted request GET /bendan-app/us-central1/api/user --> api
+[debug] [2020-02-20T21:30:37.127Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:30:37.127Z] [worker-api-98055e35-a4aa-40d5-8cfb-da56f5fb1a79]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88376.sock
+[debug] [2020-02-20T21:30:37.127Z] [worker-api-98055e35-a4aa-40d5-8cfb-da56f5fb1a79]: BUSY
+[debug] [2020-02-20T21:30:37.130Z] [runtime-status] [88376] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:30:37.130Z] [runtime-status] [88376] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:30:37.130Z] [runtime-status] [88376] Running api in mode HTTPS
+[debug] [2020-02-20T21:30:37.131Z] [runtime-status] [88376] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88376.sock
+[debug] [2020-02-20T21:30:37.132Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:30:37.136Z] [runtime-status] [88376] Ephemeral server handling GET request
+[debug] [2020-02-20T21:30:37.140Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-02-20T21:30:37.140Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-02-20T21:30:37.140Z] Accepted request GET /bendan-app/us-central1/api/posts --> api
+[debug] [2020-02-20T21:30:37.147Z] [worker-pool] addWorker(api)
+[debug] [2020-02-20T21:30:37.147Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-02-20T21:30:37.147Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-20T21:30:37.147Z] [worker-api-cbc036f6-5561-4939-9ed1-d8e382dec8c2]: Assigning socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88378.sock
+[debug] [2020-02-20T21:30:37.147Z] [worker-api-cbc036f6-5561-4939-9ed1-d8e382dec8c2]: BUSY
+[debug] [2020-02-20T21:30:37.217Z] [runtime-status] [88376] Ephemeral server survived.
+[debug] [2020-02-20T21:30:37.460Z] [runtime-status] [88378] Functions runtime initialized. {"cwd":"/Users/macbook/Registration/Registration-App-Functions/functions","node_version":"10.16.0"}
+[debug] [2020-02-20T21:30:37.462Z] [runtime-status] [88378] Disabled runtime features: undefined
+[debug] [2020-02-20T21:30:37.464Z] [runtime-status] [88378] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:30:37.465Z] [runtime-status] [88378] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[debug] [2020-02-20T21:30:37.620Z] [runtime-status] [88378] Found google-gax at /Users/macbook/Registration/Registration-App-Functions/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-02-20T21:30:37.620Z] [runtime-status] [88378] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-02-20T21:30:37.653Z] [runtime-status] [88378] Checked functions.config() {"config":{}}
+[debug] [2020-02-20T21:30:37.654Z] [runtime-status] [88378] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:30:37.655Z] [runtime-status] [88378] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T21:30:37.655Z] [runtime-status] [88378] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T21:30:37.690Z] [runtime-status] [88378] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/macbook/Registration/Registration-App-Functions/functions/node_modules/firebase-admin/lib/index.js"}}
+[info] >  {}
+[info] >  Logs visible
+[debug] [2020-02-20T21:30:37.928Z] [runtime-status] [88378] initializeApp(DEFAULT) {"databaseURL":"https://bendan-app.firebaseio.com","storageBucket":"bendan-app.appspot.com","projectId":"bendan-app","credential":{"certificate":{"projectId":"bendan-app","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1iOu1x40Pl7MW\nMCIm4WW+VthDJ/BB3CRAwQE4NU0mojmpKlR1ov1DMgg+KvO65l9QzGgCOTyEgnf8\nwbdx1lb8AUsAZpcgNGg28RG0/Hb8IzGRhw5t1ApejSNVuFb/C9fOljfc6GbW70W/\nf3lbQQ9qF5RGxHUx/2DZp/sCYSERRq7cN6IDiJq1r8H4PvoyJ+n0CPr43XlYOkS7\ncrdv4Jigq/DUX1fRRX3Q5/kBt1tB78IFxHDhzyFP500iiJB6RnXER5FvwpEErpJU\nvybzT6AqU5IA/JiD9k5lwe/YcJj7D+Gd0GGLuHKix1Q4+oRsHM0bPcdcdGxpqaSw\npFZzq0q1AgMBAAECggEADORfqv30OmCBXyjFcCHvPhSAUMqgESlPaMrcKY/9feok\n8qrXKzCLUG+X7sRRoVsVd1FA7LGAZv+2Aj0GqF66uDRmTW27u1WFditqIMKSN6dP\nMKDZCTs3Dk5zLTYFdaDzb1AzQOy/SvHcr/QfW/fznor0pI70rLuQdvyrQpi/xrBx\n5fDWpfIZzeaJ5cT/fWfjJIwWeq7pWyPbML6lpWagbvR0qNE7BDgQ4b2UN8GmXcFk\nyu6BFVDTk1NyUsEVCfa7ilwWvGXuKU2BnNdNUvNs0ICWbXsRr5nULPBeJSEvj5da\nRj8Khl2mAkdrpxMj4LwWYB1b5ZyKtwmLGKvb3hp8qQKBgQDqbfhTekk6dQrojE/f\np7DlKTTu31QZfbn9ZZDP9UIlewWNYnvY09maBJZeVimXH2XikfLWf+NH74rIcc3P\n5skyOZYEpmGfVGagFzJmNXkVvDF8CbCQOC8cRe8XqfPGL8LYDsmh9tL1d6f3RLBA\niXi0nICzggIAEt9yiAy+1DQsGQKBgQDGPQGS//V6klUwFxVGjIjIPK/FYLsb8uk1\nBws7SbSxrnosUP0mjA4B0CvRrsPXckP8/7eyEkf8Z76RTXeXMn1OCtg2TuBz4f62\nuKb+hikrPKYuOAI/8z/KHJqApMgq742QVt07usjItLs7pmAToGswQlv+6ZACyHC5\ns+6lnBAm/QKBgQCWrhCLN3KSDGDykB1W2GYvJYlMcGeR6un9Iacuw6m8hZJQChko\niSK4iHJOOHuLEzddpgm8LX9c4W8G3382PlTb33+5hWgCDTHZfI98eqpVeh0kaOYA\nDNzbA2hmgWqa3GAUl4yqegemlz5zBMd08+eNz3o55zp56aeN6jym+6Z9IQKBgHeL\nWISuJ/mXfxm2AdV+cAnYVuL/FzaegLXCnqpNI1M29WP+Hvr84IGFaLdU3bLxrEBI\ncR1IWvLCGTCEd8bM4rWKYqI1ZLNdKH5F0iaQ/wic1VXv3qNz7BbUsvM6657AwSy2\nxUj8tZIbMwGgrjWHurvqeJG7hWW4PAowkIx8FV19AoGBAOZ/rJ7RlvIHRNM9uO3R\nJeKHGdzm8I/jCWYusXm/dxu6apQRqEZjyhKX3QI2EH8fBqGOeQrTmSIaqyEfBm0u\nfLsmg8AhvOVYgwqtBOfx/24x7oRASivgedPf29IU3AQb3aQJzuk43utatbufXvaA\nbXqvaVKyVYygyfgnBjLXxIg3\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-b7vdg@bendan-app.iam.gserviceaccount.com"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-02-20T21:30:37.935Z] [runtime-status] [88378] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-20T21:30:37.935Z] [runtime-status] [88378] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-20T21:30:37.935Z] [runtime-status] [88378] Running api in mode HTTPS
+[debug] [2020-02-20T21:30:37.939Z] [runtime-status] [88378] Attempting to listen to socketPath: /var/folders/tz/fm1rnndd4jq_s8xd60jsh1880000gn/T/fire_emu_88378.sock
+[debug] [2020-02-20T21:30:37.942Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T21:30:37.948Z] [runtime-status] [88378] Ephemeral server handling GET request
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:30:37.977Z] [worker-api-98055e35-a4aa-40d5-8cfb-da56f5fb1a79]: IDLE
+[debug] [2020-02-20T21:30:37.978Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T21:30:38.097Z] [runtime-status] [88378] Ephemeral server survived.
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-20T21:30:38.647Z] [worker-api-cbc036f6-5561-4939-9ed1-d8e382dec8c2]: IDLE
+[debug] [2020-02-20T21:30:38.647Z] [work-queue] {"queueLength":0,"workRunningCount":0}
